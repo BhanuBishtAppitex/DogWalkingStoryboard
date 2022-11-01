@@ -56,15 +56,79 @@
 		52AE1AB129114FF2008849CA /* DogWalkingStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				52AE1AB229114FF2008849CA /* AppDelegate.swift */,
-				52AE1AB429114FF2008849CA /* SceneDelegate.swift */,
-				52AE1AB629114FF2008849CA /* ViewController.swift */,
-				52AE1AB829114FF2008849CA /* Main.storyboard */,
-				52AE1ABB29114FF3008849CA /* Assets.xcassets */,
-				52AE1ABD29114FF3008849CA /* LaunchScreen.storyboard */,
+				52AE1AC929115AC1008849CA /* Additional */,
+				52AE1AC629115A7B008849CA /* SplashPages */,
 				52AE1AC029114FF3008849CA /* Info.plist */,
 			);
 			path = DogWalkingStoryboard;
+			sourceTree = "<group>";
+		};
+		52AE1AC629115A7B008849CA /* SplashPages */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1AC729115A90008849CA /* SplashPage */,
+				52AE1AC829115A9D008849CA /* IntroductoryPage */,
+			);
+			path = SplashPages;
+			sourceTree = "<group>";
+		};
+		52AE1AC729115A90008849CA /* SplashPage */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1ACD29115B17008849CA /* View */,
+			);
+			path = SplashPage;
+			sourceTree = "<group>";
+		};
+		52AE1AC829115A9D008849CA /* IntroductoryPage */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1ACA29115AE9008849CA /* Model */,
+				52AE1ACB29115AF3008849CA /* View */,
+				52AE1ACC29115AF9008849CA /* Controller */,
+			);
+			path = IntroductoryPage;
+			sourceTree = "<group>";
+		};
+		52AE1AC929115AC1008849CA /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1AB229114FF2008849CA /* AppDelegate.swift */,
+				52AE1AB429114FF2008849CA /* SceneDelegate.swift */,
+				52AE1ABB29114FF3008849CA /* Assets.xcassets */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+		52AE1ACA29115AE9008849CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52AE1ACB29115AF3008849CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1AB829114FF2008849CA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52AE1ACC29115AF9008849CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1AB629114FF2008849CA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52AE1ACD29115B17008849CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1ABD29114FF3008849CA /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
