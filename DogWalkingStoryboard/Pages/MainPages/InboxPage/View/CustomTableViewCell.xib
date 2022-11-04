@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTableViewCell" customModule="DogWalkingStoryboard" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForInboxPage" rowHeight="203" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="DogWalkingStoryboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="203"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sy7-4u-Dh1">
+                        <rect key="frame" x="13" y="17" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="5E8-yM-BTV"/>
+                            <constraint firstAttribute="width" constant="42" id="fDJ-AJ-RMT"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ms7-NH-8My">
+                        <rect key="frame" x="61" y="13" width="43" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-TN-4wD">
+                                <rect key="frame" x="0.0" y="0.0" width="43" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                <color key="textColor" name="TextColorPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a31-7A-i15">
+                                <rect key="frame" x="0.0" y="23.5" width="43" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="TextColorSecondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="h42-g0-5au">
+                        <rect key="frame" x="61" y="67.5" width="38" height="41"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-pQ-MdW">
+                                <rect key="frame" x="0.0" y="0.0" width="38" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="TextColorSecondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-ck-bYa">
+                                <rect key="frame" x="0.0" y="21" width="38" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVZ-CP-V3d">
+                        <rect key="frame" x="389" y="17" width="29" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="TextColorDull"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h42-g0-5au" firstAttribute="top" secondItem="ms7-NH-8My" secondAttribute="bottom" constant="11" id="1tC-jf-khH"/>
+                    <constraint firstItem="ms7-NH-8My" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="BgD-no-RC5"/>
+                    <constraint firstItem="sy7-4u-Dh1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Ch9-sQ-4Er"/>
+                    <constraint firstItem="FVZ-CP-V3d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="dPd-vN-AOo"/>
+                    <constraint firstItem="ms7-NH-8My" firstAttribute="leading" secondItem="sy7-4u-Dh1" secondAttribute="trailing" constant="6" id="eyX-Nl-AKL"/>
+                    <constraint firstAttribute="trailing" secondItem="FVZ-CP-V3d" secondAttribute="trailing" constant="17" id="hof-Yv-Tid"/>
+                    <constraint firstItem="sy7-4u-Dh1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="kYV-pT-sb8"/>
+                    <constraint firstItem="h42-g0-5au" firstAttribute="leading" secondItem="ms7-NH-8My" secondAttribute="leading" id="u9I-Nc-WDz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boardingLabel" destination="a31-7A-i15" id="50l-qt-FVA"/>
+                <outlet property="mainImage" destination="sy7-4u-Dh1" id="H2V-E2-PTN"/>
+                <outlet property="nameLabel" destination="DDM-TN-4wD" id="1xd-VI-wjV"/>
+                <outlet property="requestLabel" destination="YM2-pQ-MdW" id="CBB-v6-li3"/>
+                <outlet property="statusLabel" destination="jh9-ck-bYa" id="MWH-mg-h3j"/>
+                <outlet property="timeLabel" destination="FVZ-CP-V3d" id="RT0-Qj-HYS"/>
+            </connections>
+            <point key="canvasLocation" x="218.11594202898553" y="-21.09375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.93333333333333335" green="0.42352941176470588" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColorDull">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColorPrimary">
+            <color red="0.16078431372549021" green="0.19607843137254902" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColorSecondary">
+            <color red="0.23137254901960785" green="0.28235294117647058" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

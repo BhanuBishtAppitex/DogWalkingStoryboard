@@ -13,10 +13,17 @@ struct C {
             static let Bold = "Poppins-Bold"
             static let Medium = "Poppins-Medium"
             static let SemiBold = "Poppins-SemiBold"
-            
+            static let Regular = "Poppins-Regular"
+        }
+        struct RobotoSlab {
+            static let SemiBold = "RobotoSlab-SemiBold"
         }
     }
     struct Colors {
         static let AccentColor = "AccentColor"
+        static let AccentBlur = "AccentBlur"
+        static let TextPrimaryColor = "TextColorPrimary"
+        static let TextSecondaryColor = "TextColorSecondary"
+        static let TextDullColor = "TextColorDull"
     }
 }

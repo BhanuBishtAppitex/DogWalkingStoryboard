@@ -34,6 +34,7 @@ class CellForYourPet: UITableViewCell {
         
         mainImage.layer.borderWidth = 1
         mainImage.layer.borderColor = UIColor.clear.cgColor
+        mainImage.layer.cornerRadius = mainImage.frame.height/2
         NSLayoutConstraint.activate([
             mainView.heightAnchor.constraint(equalToConstant: 85)
         ])

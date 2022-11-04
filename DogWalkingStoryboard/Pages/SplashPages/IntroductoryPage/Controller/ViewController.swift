@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let data = ModelForIntroductoryPage.self
     
     
     //MARK: - IBOutLet
@@ -21,15 +22,17 @@ class ViewController: UIViewController {
     //MARK: - View methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        pageControl.numberOfPages = ModelForIntroductoryPage.mainTitle.count
+        collectionView.register(CellForMainPage.nib, forCellWithReuseIdentifier: CellForMainPage.identifierText)
+        pageControl.numberOfPages = data.mainTitle.count
+        continueButton.layer.cornerRadius = continueButton.frame.height/2
         continueButton.isHidden = true
+       
+        
     }
     
     //MARK: - Button methods
     @IBAction func skipButtonPressed(_ sender: UIButton) {
-       // if let vc = storyboard?.instantiateViewController(withIdentifier: "GettingStartedStoryboard"){
-       //     present(vc, animated: true)
-       // }
+       print("skipButtonPressed")
         
     }
     
@@ -40,14 +43,20 @@ class ViewController: UIViewController {
 //MARK: - Extension for collection view
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return ModelForIntroductoryPage.mainImage.count
+        return data.mainImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellForMain", for: indexPath) as! CellForMainPage
-        cell.mainImage.image = UIImage(named: ModelForIntroductoryPage.mainImage[indexPath.row])
-        cell.mainTitle.text = ModelForIntroductoryPage.mainTitle[indexPath.row]
-        cell.secondTitle.text = ModelForIntroductoryPage.secondTitle[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellForMainPage.identifierText, for: indexPath) as! CellForMainPage
+        cell.mainImage.image = UIImage(named: data.mainImage[indexPath.row])
+        cell.mainTitle.text = data.mainTitle[indexPath.row]
+        cell.secondTitle.text = data.secondTitle[indexPath.row]
+        print("indexPath=\(indexPath.row)")
+        if indexPath.row == data.mainTitle.count-1 {
+            if view.frame.width == 375 {
+                cell.mainTitle.font = UIFont(name: C.Fonts.RobotoSlab.SemiBold, size: 20)
+            }
+        }
         return cell
     }
     
@@ -59,20 +68,25 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let scrollPos = scrollView.contentOffset.x / view.frame.width
         pageControl.currentPage = Int(scrollPos)
-        print("scrollView.contentOffset.x = \(scrollView.contentOffset.x)")
+        let scrollViewXOffset = scrollView.contentOffset.x
+        let viewWidht = view.frame.width
+        let numberOfPages = data.mainTitle.count
+        print("width= \(view.frame.width)")
+        if scrollViewXOffset > viewWidht*CGFloat((numberOfPages-2)) {
+            UIView.animate(withDuration: 2.0, delay: 0.5, options: .curveEaseInOut) {
+                self.pageControl.isHidden = true
+                self.skipButton.isHidden = true
+                self.swipeLeftText.isHidden = true
+                self.continueButton.isHidden = false
+            }
         
-        if scrollView.contentOffset.x >= view.frame.width*CGFloat((ModelForIntroductoryPage.mainTitle.count-1)){
-            pageControl.isHidden = true
-            skipButton.isHidden = true
-            swipeLeftText.isHidden = true
-            continueButton.isHidden = false
-            continueButton.layer.cornerRadius = continueButton.frame.height/2
-            
         } else {
-            pageControl.isHidden = false
-            skipButton.isHidden = false
-            swipeLeftText.isHidden = false
-            continueButton.isHidden = true
+            UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseInOut) {
+                self.pageControl.isHidden = false
+                self.skipButton.isHidden = false
+                self.swipeLeftText.isHidden = false
+                self.continueButton.isHidden = true
+            }
         }
     }
 }

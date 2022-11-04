@@ -19,6 +19,7 @@ class YourPetsViewController: UIViewController {
         ])
         tabelView.backgroundColor = UIColor.clear
         tabelView.isScrollEnabled = false
+        tabelView.separatorStyle = .none
        
     }
 }
