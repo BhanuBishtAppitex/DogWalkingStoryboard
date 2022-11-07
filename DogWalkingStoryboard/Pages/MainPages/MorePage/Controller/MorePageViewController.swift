@@ -8,6 +8,8 @@
 import UIKit
 
 class MorePageViewController: UIViewController {
+    
+    let data = ModelForSettingViewController.self
 
     @IBOutlet weak var tabelView: UITableView!
     
@@ -36,6 +38,15 @@ extension MorePageViewController: UITableViewDelegate, UITableViewDataSource {
         cell.mainLabel.text = ModelForMorePage.mainTitle[indexPath.section]
         cell.rightImgae.image = UIImage(named: ModelForMorePage.rightImage)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if ModelForMorePage.mainTitle[indexPath.section] == "Settings" {
+            let vc = SettingViewController()
+            //vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

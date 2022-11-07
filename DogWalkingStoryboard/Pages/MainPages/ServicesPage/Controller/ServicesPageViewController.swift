@@ -57,6 +57,10 @@ extension ServicesPageViewController: UICollectionViewDelegate, UICollectionView
             let vc = storyboard.instantiateViewController(withIdentifier: "DogWalkingOne")
             present(vc, animated: true)
         }
+        if indexPath.row == 3 {
+            let vc = DoggyDayCareViewController()
+            present(vc, animated: true)
+        }
     }
     
 
