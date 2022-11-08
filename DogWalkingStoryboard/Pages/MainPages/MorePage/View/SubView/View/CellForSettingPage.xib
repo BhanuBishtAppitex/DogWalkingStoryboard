@@ -48,14 +48,23 @@
                                             <constraint firstAttribute="width" constant="29" id="KYZ-9s-zJ5"/>
                                         </constraints>
                                     </imageView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvO-wM-k7c">
+                                        <rect key="frame" x="-28" y="-0.5" width="59" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="TTW-4f-Fu9"/>
+                                            <constraint firstAttribute="width" constant="57" id="a5V-kQ-Ago"/>
+                                        </constraints>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="CvO-wM-k7c" firstAttribute="centerY" secondItem="QDm-B9-VLz" secondAttribute="centerY" id="JJe-IC-0ot"/>
                                     <constraint firstAttribute="height" constant="29" id="Lr1-HO-6C0"/>
                                     <constraint firstItem="0QZ-VK-btf" firstAttribute="centerX" secondItem="QDm-B9-VLz" secondAttribute="centerX" id="Me1-rz-Q19"/>
                                     <constraint firstAttribute="width" constant="29" id="hNl-nL-IM3"/>
                                     <constraint firstAttribute="trailing" secondItem="LJV-yx-2pn" secondAttribute="trailing" id="tBu-V8-5Ca"/>
                                     <constraint firstItem="0QZ-VK-btf" firstAttribute="centerY" secondItem="QDm-B9-VLz" secondAttribute="centerY" id="tIV-CR-HWr"/>
+                                    <constraint firstAttribute="trailing" secondItem="CvO-wM-k7c" secondAttribute="trailing" id="uFL-EZ-j5m"/>
                                     <constraint firstItem="LJV-yx-2pn" firstAttribute="centerY" secondItem="QDm-B9-VLz" secondAttribute="centerY" id="zx5-Lt-ADu"/>
                                 </constraints>
                             </view>
@@ -75,6 +84,7 @@
                 <outlet property="leftLabel" destination="5DO-mk-pr3" id="lbM-aC-yKj"/>
                 <outlet property="rightImage" destination="0QZ-VK-btf" id="CfC-sO-1DE"/>
                 <outlet property="rightLabel" destination="LJV-yx-2pn" id="us6-EW-ucC"/>
+                <outlet property="rightSwitch" destination="CvO-wM-k7c" id="2rG-Sa-662"/>
                 <outlet property="rightView" destination="QDm-B9-VLz" id="EKK-Pa-63A"/>
             </connections>
             <point key="canvasLocation" x="242.0289855072464" y="146.98660714285714"/>

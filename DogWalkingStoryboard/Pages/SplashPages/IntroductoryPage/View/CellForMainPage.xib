@@ -26,14 +26,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="717" height="839"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Ys-coW">
+                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Ys-coW">
                         <rect key="frame" x="0.0" y="44" width="717" height="761"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-dD-vIV" userLabel="topView">
-                                <rect key="frame" x="0.0" y="0.0" width="717" height="375.66666666666669"/>
+                                <rect key="frame" x="8" y="0.0" width="701" height="375.66666666666669"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Introductory1" translatesAutoresizingMaskIntoConstraints="NO" id="v4y-s2-r1J" userLabel="mainImage">
-                                        <rect key="frame" x="0.0" y="0.0" width="717" height="375.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="701" height="375.66666666666669"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,36 +47,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tF-I5-AYS" userLabel="bottomView">
                                 <rect key="frame" x="0.0" y="385.66666666666674" width="717" height="375.33333333333326"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-Ih-N0K" userLabel="labelStack">
-                                        <rect key="frame" x="24" y="106.33333333333333" width="669" height="162.33333333333337"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-Ih-N0K" userLabel="labelStack">
+                                        <rect key="frame" x="24" y="118.33333333333333" width="669" height="138.33333333333337"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-v5-iuh">
-                                                <rect key="frame" x="0.0" y="0.0" width="669" height="152.33333333333334"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We uses your app and website  activity to improve your pet care experience. We will never sell your data to third parties." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN2-Tq-hzc">
-                                                        <rect key="frame" x="1.6666666666666856" y="0.0" width="665.66666666666652" height="99"/>
-                                                        <fontDescription key="fontDescription" name="RobotoSlab-SemiBold" family="Roboto Slab" pointSize="25"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowing these permissions enables us to understand app usage, conduct surveys and improve your experience." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-0l-kN4">
-                                                        <rect key="frame" x="0.0" y="112.99999999999999" width="669" height="39.333333333333329"/>
-                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exO-vs-ofo">
-                                                <rect key="frame" x="214.66666666666663" y="152.33333333333337" width="240" height="10"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="10" id="PAm-uk-Vcw"/>
-                                                </constraints>
-                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We uses your app and website  activity to improve your pet care experience. We will never sell your data to third parties." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN2-Tq-hzc">
+                                                <rect key="frame" x="1.6666666666666856" y="0.0" width="665.66666666666652" height="99"/>
+                                                <fontDescription key="fontDescription" name="RobotoSlab-SemiBold" family="Roboto Slab" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowing these permissions enables us to understand app usage, conduct surveys and improve your experience." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-0l-kN4">
+                                                <rect key="frame" x="0.0" y="99" width="669" height="39.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="exO-vs-ofo" firstAttribute="width" secondItem="0hW-Ih-N0K" secondAttribute="width" multiplier="0.358744" id="brH-c2-p17"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -100,9 +86,14 @@
             </constraints>
             <size key="customSize" width="717" height="839"/>
             <connections>
+                <outlet property="bottom" destination="Puu-cz-BG8" id="jPp-h5-PfY"/>
+                <outlet property="leading" destination="VeK-oL-TeS" id="8Lk-2Y-Rb8"/>
                 <outlet property="mainImage" destination="v4y-s2-r1J" id="dka-FG-3uW"/>
                 <outlet property="mainTitle" destination="QN2-Tq-hzc" id="PEl-Tr-OXW"/>
                 <outlet property="secondTitle" destination="nJN-0l-kN4" id="nkf-VG-rzs"/>
+                <outlet property="stackView" destination="1lD-Ys-coW" id="uB2-Ip-CA3"/>
+                <outlet property="top" destination="Lqd-ix-ziE" id="TPs-iQ-Bmn"/>
+                <outlet property="trailing" destination="Anp-Wt-3WO" id="x2g-a5-VGD"/>
             </connections>
             <point key="canvasLocation" x="605" y="-261"/>
         </collectionViewCell>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForMorePage" rowHeight="166" id="KGk-i7-Jjw" customClass="CellForMorePage" customModule="DogWalkingStoryboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="0od-a3-TRy">
+                        <rect key="frame" x="18" y="9" width="354" height="149"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ServicesPageIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="80R-4O-YdF">
+                                <rect key="frame" x="0.0" y="55.5" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="2oC-he-OVr"/>
+                                    <constraint firstAttribute="width" constant="38" id="fCX-zP-Ay0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPp-aG-vC2">
+                                <rect key="frame" x="49" y="63.5" width="265" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" name="TextColorSecondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="O5a-5Y-Pdb">
+                                <rect key="frame" x="325" y="60" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="1nT-ie-ads"/>
+                                    <constraint firstAttribute="width" constant="29" id="BQY-BZ-rng"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0od-a3-TRy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="D9S-9V-oEl"/>
+                    <constraint firstItem="0od-a3-TRy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="NLT-ob-4IH"/>
+                    <constraint firstAttribute="bottom" secondItem="0od-a3-TRy" secondAttribute="bottom" constant="8" id="neM-Yp-0tl"/>
+                    <constraint firstAttribute="trailing" secondItem="0od-a3-TRy" secondAttribute="trailing" constant="24" id="qgG-Oa-J7T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftImage" destination="80R-4O-YdF" id="Skp-j4-xlw"/>
+                <outlet property="mainLabel" destination="XPp-aG-vC2" id="ab7-B2-cd8"/>
+                <outlet property="mainView" destination="H2p-sc-9uM" id="mNq-hZ-c5c"/>
+                <outlet property="rightImage" destination="O5a-5Y-Pdb" id="ftM-Fm-MFG"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Arrow" width="29" height="29"/>
+        <image name="ServicesPageIcon-1" width="115" height="115"/>
+        <namedColor name="TextColorSecondary">
+            <color red="0.23137254901960785" green="0.28235294117647058" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

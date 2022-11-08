@@ -29,6 +29,8 @@
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarController" id="wgu-y8-rrZ" customClass="MainTabBarController" customModule="DogWalkingStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oPy-DS-y6t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -415,58 +417,6 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7om-DL-UGp">
                                         <rect key="frame" x="0.0" y="34" width="366" height="337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForMorePage" rowHeight="55" id="6bq-X7-iRh" customClass="CellForMorePage" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="366" height="55"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6bq-X7-iRh" id="Phe-NF-3Is">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="55"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="CCK-1E-Hpo">
-                                                            <rect key="frame" x="18" y="0.0" width="335" height="55"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TfJ-Fu-XFz">
-                                                                    <rect key="frame" x="0.0" y="8.5" width="38" height="38"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="38" id="3ic-aW-hH8"/>
-                                                                        <constraint firstAttribute="width" constant="38" id="PJP-E4-8JL"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite a friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtF-2K-i3e">
-                                                                    <rect key="frame" x="49" y="17.5" width="246" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2oQ-Ea-CQ9">
-                                                                    <rect key="frame" x="306" y="13" width="29" height="29"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="29" id="Juc-0k-MTA"/>
-                                                                        <constraint firstAttribute="width" constant="29" id="TJx-W6-TbV"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="55" id="1ch-yI-Mtb"/>
-                                                            </constraints>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="CCK-1E-Hpo" secondAttribute="trailing" constant="13" id="Acj-fa-5AR"/>
-                                                        <constraint firstItem="CCK-1E-Hpo" firstAttribute="leading" secondItem="Phe-NF-3Is" secondAttribute="leading" constant="18" id="bMX-TM-F9q"/>
-                                                        <constraint firstItem="CCK-1E-Hpo" firstAttribute="centerY" secondItem="Phe-NF-3Is" secondAttribute="centerY" id="tfq-sO-JVD"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                                <connections>
-                                                    <outlet property="leftImage" destination="TfJ-Fu-XFz" id="E8i-xN-PYI"/>
-                                                    <outlet property="mainLabel" destination="TtF-2K-i3e" id="iuc-oe-a0K"/>
-                                                    <outlet property="mainView" destination="Phe-NF-3Is" id="eHd-UJ-B6W"/>
-                                                    <outlet property="rightImgae" destination="2oQ-Ea-CQ9" id="681-VA-552"/>
-                                                    <outlet property="stackView" destination="CCK-1E-Hpo" id="uTA-uJ-ndc"/>
-                                                </connections>
-                                            </tableViewCell>
-                                        </prototypes>
                                         <connections>
                                             <outlet property="dataSource" destination="OPh-cC-krp" id="Wqr-B5-Oxc"/>
                                             <outlet property="delegate" destination="OPh-cC-krp" id="Dvu-p2-ZFG"/>

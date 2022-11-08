@@ -6,7 +6,6 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -24,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-u3-eao">
-                                <rect key="frame" x="0.0" y="44" width="390" height="800"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wzX-qs-lIo">
                                     <size key="itemSize" width="387" height="680"/>
@@ -32,17 +31,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellForMainPage" id="8VE-IU-lWE" customClass="CellForMainPage" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="60" width="387" height="680"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jq8-RU-kJZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="387" height="680"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <viewLayoutGuide key="safeArea" id="GOX-1W-4hl"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Y5Z-gR-nsR"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="4Un-Vx-v94"/>
@@ -109,10 +98,9 @@
                         <constraints>
                             <constraint firstItem="r4p-u3-eao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0gb-Hj-4oC"/>
                             <constraint firstItem="r4p-u3-eao" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hrs-93-zm7"/>
-                            <constraint firstItem="r4p-u3-eao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iub-H4-EgB"/>
                             <constraint firstItem="N0f-Zy-hbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R9V-K5-sCY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N0f-Zy-hbJ" secondAttribute="trailing" id="f01-Ab-KfO"/>
-                            <constraint firstItem="N0f-Zy-hbJ" firstAttribute="bottom" secondItem="r4p-u3-eao" secondAttribute="bottom" id="mjd-2T-Pqk"/>
+                            <constraint firstItem="N0f-Zy-hbJ" firstAttribute="top" secondItem="r4p-u3-eao" secondAttribute="bottom" id="mjd-2T-Pqk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r4p-u3-eao" secondAttribute="trailing" id="moD-EN-4DW"/>
                             <constraint firstItem="N0f-Zy-hbJ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="sPY-YJ-bGP"/>
                             <constraint firstItem="N0f-Zy-hbJ" firstAttribute="top" secondItem="zmJ-y6-ska" secondAttribute="bottom" id="v4B-RF-QOX"/>

@@ -13,6 +13,7 @@ class CellForSettingPage: UITableViewCell {
     @IBOutlet weak var rightView: UIView!
     @IBOutlet weak var rightLabel: UILabel!
     @IBOutlet weak var rightImage: UIImageView!
+    @IBOutlet weak var rightSwitch: UISwitch!
     
     //MARK: - identifier and nib 
     static let identifierString: String = "CellForSettingPage"

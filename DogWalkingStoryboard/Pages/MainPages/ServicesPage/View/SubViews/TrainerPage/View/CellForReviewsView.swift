@@ -1,5 +1,5 @@
 //
-//  CellForMorePage.swift
+//  CellForReviewsView.swift
 //  DogWalkingStoryboard
 //
 //  Created by wOOx Technology on 08/11/22.
@@ -7,18 +7,18 @@
 
 import UIKit
 
-class CellForMorePage: UITableViewCell {
+class CellForReviewsView: UITableViewCell {
     
-    static let identificationString: String = "CellForMorePage"
+    static let identifierString: String = "CellForReviewsView"
     static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
-
-   
     @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var leftImage: UIImageView!
-    @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var rightImage: UIImageView!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var reviewLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -31,11 +31,9 @@ class CellForMorePage: UITableViewCell {
         super.layoutSubviews()
         mainView.layer.borderWidth = 1
         mainView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 0.125)
-        NSLayoutConstraint.activate([
-            mainView.heightAnchor.constraint(equalToConstant: 55),
-            mainView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-48)
-        ])
-        mainView.layer.cornerRadius = mainView.frame.height/2
+        mainView.layer.cornerRadius = 4
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
+    
     }
     
 }

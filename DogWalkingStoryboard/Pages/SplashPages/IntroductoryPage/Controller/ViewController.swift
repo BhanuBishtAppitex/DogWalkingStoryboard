@@ -48,10 +48,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellForMainPage.identifierText, for: indexPath) as! CellForMainPage
+        //cell.translatesAutoresizingMaskIntoConstraints = false
+    
+        NSLayoutConstraint.activate([
+            cell.widthAnchor.constraint(equalToConstant: view.frame.width),
+            cell.heightAnchor.constraint(equalToConstant: collectionView.frame.height),
+           
+        ])
         cell.mainImage.image = UIImage(named: data.mainImage[indexPath.row])
         cell.mainTitle.text = data.mainTitle[indexPath.row]
         cell.secondTitle.text = data.secondTitle[indexPath.row]
-        print("indexPath=\(indexPath.row)")
         if indexPath.row == data.mainTitle.count-1 {
             if view.frame.width == 375 {
                 cell.mainTitle.font = UIFont(name: C.Fonts.RobotoSlab.SemiBold, size: 20)
@@ -60,9 +66,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height)
-    }
+    
+
     
     //MARK: - scroll view method to assing page controller current page
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -71,7 +76,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         let scrollViewXOffset = scrollView.contentOffset.x
         let viewWidht = view.frame.width
         let numberOfPages = data.mainTitle.count
-        print("width= \(view.frame.width)")
         if scrollViewXOffset > viewWidht*CGFloat((numberOfPages-2)) {
             UIView.animate(withDuration: 2.0, delay: 0.5, options: .curveEaseInOut) {
                 self.pageControl.isHidden = true

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5212EA67291A16CD007522BD /* ModelForTrainerPageInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA66291A16CD007522BD /* ModelForTrainerPageInfoView.swift */; };
+		5212EA6A291A189E007522BD /* CellForMorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA68291A189E007522BD /* CellForMorePage.swift */; };
+		5212EA6B291A189E007522BD /* CellForMorePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5212EA69291A189E007522BD /* CellForMorePage.xib */; };
+		5212EA6E291A252F007522BD /* CellForReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA6C291A252F007522BD /* CellForReviewsView.swift */; };
+		5212EA6F291A252F007522BD /* CellForReviewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5212EA6D291A252F007522BD /* CellForReviewsView.xib */; };
+		5212EA72291A53E4007522BD /* ContactPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA71291A53E4007522BD /* ContactPageViewController.swift */; };
+		5212EA74291A5516007522BD /* ModelForContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA73291A5516007522BD /* ModelForContactPage.swift */; };
 		5227A0E5291298EE0025B26F /* ServicesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0E4291298EE0025B26F /* ServicesPageViewController.swift */; };
 		5227A0E7291299EC0025B26F /* ModelForServicesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0E6291299EC0025B26F /* ModelForServicesPage.swift */; };
 		5227A0EC29129F260025B26F /* YourPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0EB29129F260025B26F /* YourPetsViewController.swift */; };
@@ -14,7 +21,6 @@
 		5227A0F02912A0FA0025B26F /* ModelForYourPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0EF2912A0FA0025B26F /* ModelForYourPet.swift */; };
 		5227A0F52912A6790025B26F /* MorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0F42912A6790025B26F /* MorePageViewController.swift */; };
 		5227A0F72912A6880025B26F /* ModelForMorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0F62912A6880025B26F /* ModelForMorePage.swift */; };
-		5227A0F92912A80C0025B26F /* CellForMorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0F82912A80C0025B26F /* CellForMorePage.swift */; };
 		5235B4E529154A7A00C43734 /* CellForSettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235B4E329154A7A00C43734 /* CellForSettingPage.swift */; };
 		5235B4E629154A7A00C43734 /* CellForSettingPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5235B4E429154A7A00C43734 /* CellForSettingPage.xib */; };
 		5235B4E929154D8800C43734 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235B4E729154D8800C43734 /* SettingViewController.swift */; };
@@ -66,6 +72,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5212EA66291A16CD007522BD /* ModelForTrainerPageInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForTrainerPageInfoView.swift; sourceTree = "<group>"; };
+		5212EA68291A189E007522BD /* CellForMorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForMorePage.swift; sourceTree = "<group>"; };
+		5212EA69291A189E007522BD /* CellForMorePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForMorePage.xib; sourceTree = "<group>"; };
+		5212EA6C291A252F007522BD /* CellForReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForReviewsView.swift; sourceTree = "<group>"; };
+		5212EA6D291A252F007522BD /* CellForReviewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForReviewsView.xib; sourceTree = "<group>"; };
+		5212EA71291A53E4007522BD /* ContactPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPageViewController.swift; sourceTree = "<group>"; };
+		5212EA73291A5516007522BD /* ModelForContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForContactPage.swift; sourceTree = "<group>"; };
 		5227A0E4291298EE0025B26F /* ServicesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPageViewController.swift; sourceTree = "<group>"; };
 		5227A0E6291299EC0025B26F /* ModelForServicesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForServicesPage.swift; sourceTree = "<group>"; };
 		5227A0EB29129F260025B26F /* YourPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPetsViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +86,6 @@
 		5227A0EF2912A0FA0025B26F /* ModelForYourPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForYourPet.swift; sourceTree = "<group>"; };
 		5227A0F42912A6790025B26F /* MorePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePageViewController.swift; sourceTree = "<group>"; };
 		5227A0F62912A6880025B26F /* ModelForMorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForMorePage.swift; sourceTree = "<group>"; };
-		5227A0F82912A80C0025B26F /* CellForMorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForMorePage.swift; sourceTree = "<group>"; };
 		5235B4E329154A7A00C43734 /* CellForSettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForSettingPage.swift; sourceTree = "<group>"; };
 		5235B4E429154A7A00C43734 /* CellForSettingPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForSettingPage.xib; sourceTree = "<group>"; };
 		5235B4E729154D8800C43734 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -173,7 +185,8 @@
 		5227A0F22912A64E0025B26F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5227A0F82912A80C0025B26F /* CellForMorePage.swift */,
+				5212EA68291A189E007522BD /* CellForMorePage.swift */,
+				5212EA69291A189E007522BD /* CellForMorePage.xib */,
 				528689A6291549CA0087487C /* SubView */,
 			);
 			path = View;
@@ -271,6 +284,8 @@
 		523A1A0029192AAD0034ACF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5212EA66291A16CD007522BD /* ModelForTrainerPageInfoView.swift */,
+				5212EA73291A5516007522BD /* ModelForContactPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +293,8 @@
 		523A1A0129192AB70034ACF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5212EA6C291A252F007522BD /* CellForReviewsView.swift */,
+				5212EA6D291A252F007522BD /* CellForReviewsView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +304,7 @@
 			children = (
 				523A19EB291905980034ACF5 /* TrainerPageStoryBoard.storyboard */,
 				523A19EF291909A80034ACF5 /* TrainerPageViewController.swift */,
+				5212EA71291A53E4007522BD /* ContactPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -701,6 +719,7 @@
 			files = (
 				5288380329122EA6009A4D59 /* Poppins-SemiBold.ttf in Resources */,
 				528837F429122E5A009A4D59 /* RobotoSlab-Regular.ttf in Resources */,
+				5212EA6F291A252F007522BD /* CellForReviewsView.xib in Resources */,
 				52AE1ABF29114FF3008849CA /* LaunchScreen.storyboard in Resources */,
 				5288381E2912829A009A4D59 /* MainTabBar.storyboard in Resources */,
 				5288380129122EA6009A4D59 /* Poppins-Regular.ttf in Resources */,
@@ -711,6 +730,7 @@
 				528689962914F4980087487C /* CellForMainPage.xib in Resources */,
 				528837F629122E5A009A4D59 /* RobotoSlab-Light.ttf in Resources */,
 				528837FA29122E5A009A4D59 /* RobotoSlab-Medium.ttf in Resources */,
+				5212EA6B291A189E007522BD /* CellForMorePage.xib in Resources */,
 				523A19EC291905980034ACF5 /* TrainerPageStoryBoard.storyboard in Resources */,
 				528837F729122E5A009A4D59 /* RobotoSlab-Bold.ttf in Resources */,
 				5288380229122EA6009A4D59 /* Poppins-Bold.ttf in Resources */,
@@ -740,7 +760,9 @@
 				5227A0E7291299EC0025B26F /* ModelForServicesPage.swift in Sources */,
 				523A19EE291908710034ACF5 /* CustomImageView.swift in Sources */,
 				52AE1AB729114FF2008849CA /* ViewController.swift in Sources */,
+				5212EA72291A53E4007522BD /* ContactPageViewController.swift in Sources */,
 				5227A0F02912A0FA0025B26F /* ModelForYourPet.swift in Sources */,
+				5212EA6E291A252F007522BD /* CellForReviewsView.swift in Sources */,
 				5277695C2913C264003697BE /* CustomTableViewCell.swift in Sources */,
 				5286899E291523120087487C /* MainTabBarController.swift in Sources */,
 				52AE1AB329114FF2008849CA /* AppDelegate.swift in Sources */,
@@ -752,17 +774,19 @@
 				523A19E42918E60F0034ACF5 /* CellForDoggyDayCare.swift in Sources */,
 				5277694A291397E1003697BE /* CustomCornerRadiusView.swift in Sources */,
 				52AE1AB529114FF2008849CA /* SceneDelegate.swift in Sources */,
+				5212EA67291A16CD007522BD /* ModelForTrainerPageInfoView.swift in Sources */,
 				5227A0E5291298EE0025B26F /* ServicesPageViewController.swift in Sources */,
 				52C9AD422913EFF900BC340A /* DogWalkingOneViewController.swift in Sources */,
 				5227A0EE29129F710025B26F /* CellForYourPet.swift in Sources */,
+				5212EA74291A5516007522BD /* ModelForContactPage.swift in Sources */,
 				523A19E92918FBC30034ACF5 /* ModelForDoggyDayCare.swift in Sources */,
 				528689952914F4980087487C /* CellForMainPage.swift in Sources */,
 				52868999291518760087487C /* CellForServicePage.swift in Sources */,
 				527769532913B579003697BE /* InboxViewController.swift in Sources */,
 				52883809291230C7009A4D59 /* Constants.swift in Sources */,
-				5227A0F92912A80C0025B26F /* CellForMorePage.swift in Sources */,
 				527769552913B663003697BE /* ModelForInboxPage.swift in Sources */,
 				523A19D52918CB210034ACF5 /* ModelForSettingViewController.swift in Sources */,
+				5212EA6A291A189E007522BD /* CellForMorePage.swift in Sources */,
 				5288380B291231E6009A4D59 /* ModelForIntrodcutoryPage.swift in Sources */,
 				523A19E72918ED030034ACF5 /* DoggyDayCareViewController.swift in Sources */,
 			);

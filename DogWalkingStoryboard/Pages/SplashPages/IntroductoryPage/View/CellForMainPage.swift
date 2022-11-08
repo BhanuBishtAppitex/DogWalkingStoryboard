@@ -13,6 +13,10 @@ class CellForMainPage: UICollectionViewCell {
     static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
+    @IBOutlet weak var leading: NSLayoutConstraint!
+    @IBOutlet weak var trailing: NSLayoutConstraint!
+    @IBOutlet weak var bottom: NSLayoutConstraint!
+    @IBOutlet weak var top: NSLayoutConstraint!
     
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var mainTitle: UILabel!
@@ -21,16 +25,13 @@ class CellForMainPage: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        NSLayoutConstraint.activate([
-            contentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
-            contentView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height-87)
-        ])
+    
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-       
+      
+        
     }
 
 }

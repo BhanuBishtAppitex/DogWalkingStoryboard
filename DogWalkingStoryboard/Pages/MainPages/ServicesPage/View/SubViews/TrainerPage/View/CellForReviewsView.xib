@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CellForReviewsView" customModule="DogWalkingStoryboard" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForReviewsView" id="KGk-i7-Jjw" customClass="CellForReviewsView" customModule="DogWalkingStoryboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="K42-cB-5OX">
+                        <rect key="frame" x="13" y="10" width="438" height="195"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JS6-Gy-xuf">
+                                <rect key="frame" x="0.0" y="76.5" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="cmm-fh-RUP"/>
+                                    <constraint firstAttribute="width" constant="42" id="hiI-xr-xv7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Err-zd-e9n">
+                                <rect key="frame" x="48" y="65.5" width="390" height="64.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olivia K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-gb-6AT">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" name="TextColorPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 3. 2022" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqf-lz-ajZ">
+                                        <rect key="frame" x="0.0" y="23.5" width="390" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="TextColorSecondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chirs was a great person" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5h-jM-Cig">
+                                        <rect key="frame" x="0.0" y="44.5" width="390" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="TextColorPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K42-cB-5OX" secondAttribute="trailing" constant="13" id="cwU-Gk-RFS"/>
+                    <constraint firstItem="K42-cB-5OX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="jVN-Tj-q6C"/>
+                    <constraint firstAttribute="bottom" secondItem="K42-cB-5OX" secondAttribute="bottom" constant="10" id="kSC-DE-et7"/>
+                    <constraint firstItem="K42-cB-5OX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lN7-I7-1xL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="xqf-lz-ajZ" id="1pM-hx-wvi"/>
+                <outlet property="mainView" destination="H2p-sc-9uM" id="Hha-nc-btv"/>
+                <outlet property="nameLabel" destination="MZe-gb-6AT" id="oy8-rs-uB4"/>
+                <outlet property="profileImage" destination="JS6-Gy-xuf" id="UJt-3J-leP"/>
+                <outlet property="reviewLabel" destination="k5h-jM-Cig" id="Ujg-HH-UlU"/>
+            </connections>
+            <point key="canvasLocation" x="236.23188405797103" y="130.91517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TextColorPrimary">
+            <color red="0.16078431372549021" green="0.19607843137254902" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColorSecondary">
+            <color red="0.23137254901960785" green="0.28235294117647058" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

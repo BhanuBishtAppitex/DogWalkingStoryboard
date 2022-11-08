@@ -10,13 +10,14 @@ import UIKit
 class MorePageViewController: UIViewController {
     
     let data = ModelForSettingViewController.self
+    let cell = CellForMorePage.self
 
     @IBOutlet weak var tabelView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabelView.separatorStyle = .none
-        tabelView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+       // tabelView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        tabelView.register(cell.nib, forCellReuseIdentifier: cell.identificationString)
     }
 }
 
@@ -36,7 +37,7 @@ extension MorePageViewController: UITableViewDelegate, UITableViewDataSource {
         cell.leftImage.image = UIImage(named: ModelForMorePage.leftImage[indexPath.section])
         print("mainLabel : \(ModelForMorePage.mainTitle[indexPath.section])")
         cell.mainLabel.text = ModelForMorePage.mainTitle[indexPath.section]
-        cell.rightImgae.image = UIImage(named: ModelForMorePage.rightImage)
+        cell.rightImage.image = UIImage(named: ModelForMorePage.rightImage)
         return cell
     }
     
