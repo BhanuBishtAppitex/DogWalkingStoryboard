@@ -25,5 +25,6 @@ struct C {
         static let TextPrimaryColor = "TextColorPrimary"
         static let TextSecondaryColor = "TextColorSecondary"
         static let TextDullColor = "TextColorDull"
+        static let BorderColor = "BorderColor"
     }
 }

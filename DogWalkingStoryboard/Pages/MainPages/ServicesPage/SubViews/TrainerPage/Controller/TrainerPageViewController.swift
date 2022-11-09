@@ -48,6 +48,9 @@ class TrainerPageViewController: UIViewController {
         print("ContactButtonPressed")
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true)
+    }
     
     @IBAction func segmentedControllerButtonPressed(_ sender: UIButton) {
         switch sender.titleLabel?.text{

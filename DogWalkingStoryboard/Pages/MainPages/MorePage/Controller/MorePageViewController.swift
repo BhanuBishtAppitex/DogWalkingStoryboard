@@ -44,7 +44,7 @@ extension MorePageViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         if ModelForMorePage.mainTitle[indexPath.section] == "Settings" {
             let vc = SettingViewController()
-            //vc.modalPresentationStyle = .fullScreen
+            vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }
     }

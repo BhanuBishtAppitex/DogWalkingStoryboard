@@ -39,6 +39,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Sd-Qh-35t"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-wX-bh7">
                                         <rect key="frame" x="157" y="1" width="79" height="46"/>
@@ -202,7 +205,7 @@
                                     </view>
                                     <view alpha="0.125" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNW-Ug-XqD" userLabel="lineView">
                                         <rect key="frame" x="0.0" y="58" width="414" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="BorderColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="t77-rL-ipG"/>
                                         </constraints>
@@ -599,7 +602,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="contactButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LOK-xV-YOJ"/>
-                                    <segue destination="Bae-Yx-Gwl" kind="presentation" id="UJ6-0g-f2t"/>
+                                    <segue destination="Bae-Yx-Gwl" kind="presentation" modalPresentationStyle="fullScreen" id="UJ6-0g-f2t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -646,7 +649,7 @@
             <objects>
                 <viewController storyboardIdentifier="ContactViewController" id="Bae-Yx-Gwl" customClass="ContactPageViewController" customModule="DogWalkingStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="djp-1t-PNq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fii-up-knk" userLabel="topBarView">
@@ -660,6 +663,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="BackButton"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Bae-Yx-Gwl" eventType="touchUpInside" id="Gn4-Lu-A2m"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Chris  H." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-l7-i0z">
                                         <rect key="frame" x="135.5" y="13" width="136" height="22.5"/>
@@ -682,7 +688,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-Oz-Grw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1185585678807947" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="BorderColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="das-po-iaS"/>
                                         </constraints>
@@ -718,7 +724,7 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YU-MF-Fzg">
                                         <rect key="frame" x="0.0" y="69" width="414" height="2"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1185585678807947" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="BorderColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="2fO-uG-MBi"/>
                                         </constraints>
@@ -846,6 +852,9 @@
         </namedColor>
         <namedColor name="AccentColor">
             <color red="0.93333333333333335" green="0.42352941176470588" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BorderColor">
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColorDull">
             <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

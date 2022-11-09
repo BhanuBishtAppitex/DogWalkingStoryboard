@@ -26,7 +26,10 @@ class SettingViewController: UIViewController {
     }
 
 
-
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }
 
 extension SettingViewController: UITableViewDelegate, UITableViewDataSource {

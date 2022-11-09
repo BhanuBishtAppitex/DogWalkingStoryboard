@@ -8,19 +8,18 @@
 import UIKit
 
 class InboxViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var pendingButton: UIButton!
-    @IBOutlet weak var upcomingButton: UIButton!
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        pendingButton.titleLabel?.font = UIFont(name: C.Fonts.Poppins.Medium, size: 14)
-        upcomingButton.titleLabel?.font = UIFont(name: C.Fonts.Poppins.Medium, size: 14)
-        pendingButton.layer.cornerRadius = pendingButton.frame.height/2
-        upcomingButton.layer.cornerRadius = upcomingButton.frame.height/2
-        pendingButton.tag = 1
-        upcomingButton.tag = 2
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        segmentedControl.backgroundColor = UIColor(red: 0.991, green: 0.925, blue: 0.909, alpha: 1)
+        segmentedControl.selectedSegmentTintColor = .white
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: C.Colors.AccentColor)]
+        let titleTextAttributes2 = [NSAttributedString.Key.foregroundColor: UIColor(named: C.Colors.TextDullColor)]
+        segmentedControl.setTitleTextAttributes(titleTextAttributes2 as [NSAttributedString.Key : Any], for: .normal)
+        segmentedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
     }
     
     override func viewDidLoad() {
@@ -28,18 +27,14 @@ class InboxViewController: UIViewController {
         tableView.register(CustomTableViewCell.nib, forCellReuseIdentifier: CustomTableViewCell.indetifierText)
         
     }
-    
-    @IBAction func topBarButtonPessed(_ sender: UIButton) {
-        if sender.tag == 1 {
-            print("Pending button Pressed")
-        } else {
-            print("Upcoming button pressed")
-           // upcomingButton.setBackgroundColor(.white, forState: .normal)
-        }
+ 
+    //MARK: - button presss methods
+    @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+       
     }
-    
-    
-    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
 }
 
 extension InboxViewController: UITableViewDelegate, UITableViewDataSource {

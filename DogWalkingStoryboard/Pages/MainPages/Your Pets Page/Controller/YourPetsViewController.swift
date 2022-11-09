@@ -8,19 +8,15 @@
 import UIKit
 
 class YourPetsViewController: UIViewController {
+    let nib = CellForYourPet.nib
+    let identifier = CellForYourPet.identifierString
 
-    @IBOutlet weak var tabelView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLayoutConstraint.activate([
-            tabelView.heightAnchor.constraint(equalToConstant: 95)
-        ])
-        tabelView.backgroundColor = UIColor.clear
-        tabelView.isScrollEnabled = false
-        tabelView.separatorStyle = .none
-       
+        tableView.register(nib, forCellReuseIdentifier: identifier)
     }
 }
 
@@ -30,7 +26,7 @@ extension YourPetsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellForYourPetsPage", for: indexPath) as! CellForYourPet
+        let cell = tableView.dequeueReusableCell(withIdentifier:identifier, for: indexPath) as! CellForYourPet
         cell.mainImage.image = UIImage(named: ModelForYourPet.mainImage)
         cell.nameText.text = ModelForYourPet.nameText
         cell.categoryText.text = ModelForYourPet.descriptionText

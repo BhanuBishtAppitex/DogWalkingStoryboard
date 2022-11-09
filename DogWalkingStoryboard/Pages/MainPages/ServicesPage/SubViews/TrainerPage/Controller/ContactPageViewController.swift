@@ -26,6 +26,12 @@ class ContactPageViewController: UIViewController {
         
     }
     
+    //MARK: - Button press methods
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
+    
 }
 
 extension ContactPageViewController: UITableViewDelegate, UITableViewDataSource {

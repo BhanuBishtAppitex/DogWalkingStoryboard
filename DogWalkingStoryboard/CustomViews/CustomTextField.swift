@@ -34,12 +34,17 @@ class CustomTextField: UITextField {
         //layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
         //layer.shadowOpacity = 1.0
         //layer.shadowRadius = 0.25
-        self.addBottomBorder()
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.bounds.width-30, height: 1)
+        bottomLine.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.125).cgColor
+        borderStyle = .none
+        layer.addSublayer(bottomLine)
+        
     }
     
 
 }
-
+/*
 extension UITextField {
     func addBottomBorder(){
         let bottomLine = CALayer()
@@ -51,3 +56,22 @@ extension UITextField {
     }
 }
 
+*/
+
+class CustomTextFieldTwo: UITextField {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        updateView()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        updateView()
+    }
+    
+    func updateView() {
+        layer.borderWidth = 1
+        layer.borderColor = #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
+        layer.cornerRadius = 5
+    }
+}

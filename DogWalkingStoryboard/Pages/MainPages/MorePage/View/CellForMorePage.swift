@@ -30,7 +30,7 @@ class CellForMorePage: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         mainView.layer.borderWidth = 1
-        mainView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 0.125)
+        mainView.layer.borderColor = #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
         NSLayoutConstraint.activate([
             mainView.heightAnchor.constraint(equalToConstant: 55),
             mainView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-48)

@@ -28,50 +28,62 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwg-gu-3fg">
                         <rect key="frame" x="0.0" y="0.0" width="424" height="248"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2QF-hy-b0t">
-                                <rect key="frame" x="0.0" y="0.0" width="424" height="248"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-pJ-vfO">
+                                <rect key="frame" x="4" y="4" width="416" height="240"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ServicesPageIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-51-XQ8">
-                                        <rect key="frame" x="85" y="0.0" width="254" height="127"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="KTW-1s-SXN">
-                                        <rect key="frame" x="136.5" y="135" width="151" height="95"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2QF-hy-b0t">
+                                        <rect key="frame" x="0.0" y="0.0" width="416" height="240"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Walking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-Gw-ThL">
-                                                <rect key="frame" x="0.0" y="0.0" width="151" height="49"/>
-                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in your nighbourhood" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-hW-oRI">
-                                                <rect key="frame" x="0.0" y="50" width="151" height="45"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ServicesPageIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-51-XQ8">
+                                                <rect key="frame" x="83" y="0.0" width="250" height="123"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="KTW-1s-SXN">
+                                                <rect key="frame" x="132.5" y="131" width="151" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Walking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQs-Gw-ThL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="151" height="47"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in your nighbourhood" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-hW-oRI">
+                                                        <rect key="frame" x="0.0" y="48" width="151" height="43"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-Y7-i2j">
+                                                <rect key="frame" x="90.5" y="230" width="235" height="10"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="10" id="rcC-A7-M4H"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
-                                    </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-Y7-i2j">
-                                        <rect key="frame" x="92" y="238" width="240" height="10"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="10" id="rcC-A7-M4H"/>
+                                            <constraint firstItem="NYS-51-XQ8" firstAttribute="width" secondItem="2QF-hy-b0t" secondAttribute="width" multiplier="0.6" id="Bbu-M2-LYR"/>
+                                            <constraint firstItem="RXg-Y7-i2j" firstAttribute="width" secondItem="2QF-hy-b0t" secondAttribute="width" multiplier="0.566038" id="IgR-Va-gsL"/>
+                                            <constraint firstItem="NYS-51-XQ8" firstAttribute="height" secondItem="2QF-hy-b0t" secondAttribute="height" multiplier="0.512" id="uwW-8A-tx5"/>
                                         </constraints>
-                                    </view>
+                                    </stackView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="NYS-51-XQ8" firstAttribute="width" secondItem="2QF-hy-b0t" secondAttribute="width" multiplier="0.6" id="Bbu-M2-LYR"/>
-                                    <constraint firstItem="RXg-Y7-i2j" firstAttribute="width" secondItem="2QF-hy-b0t" secondAttribute="width" multiplier="0.566038" id="IgR-Va-gsL"/>
-                                    <constraint firstItem="NYS-51-XQ8" firstAttribute="height" secondItem="2QF-hy-b0t" secondAttribute="height" multiplier="0.512" id="uwW-8A-tx5"/>
+                                    <constraint firstAttribute="bottom" secondItem="2QF-hy-b0t" secondAttribute="bottom" id="8z5-u8-DQx"/>
+                                    <constraint firstItem="2QF-hy-b0t" firstAttribute="top" secondItem="bf9-pJ-vfO" secondAttribute="top" id="VJN-eT-98p"/>
+                                    <constraint firstItem="2QF-hy-b0t" firstAttribute="leading" secondItem="bf9-pJ-vfO" secondAttribute="leading" id="awa-tU-svY"/>
+                                    <constraint firstAttribute="trailing" secondItem="2QF-hy-b0t" secondAttribute="trailing" id="vDV-zE-AkE"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2QF-hy-b0t" firstAttribute="height" secondItem="kwg-gu-3fg" secondAttribute="height" id="5g0-Pa-dBg"/>
-                            <constraint firstItem="2QF-hy-b0t" firstAttribute="width" secondItem="kwg-gu-3fg" secondAttribute="width" id="Hmh-zT-Lja"/>
-                            <constraint firstItem="2QF-hy-b0t" firstAttribute="centerX" secondItem="kwg-gu-3fg" secondAttribute="centerX" id="Jmj-se-lkI"/>
-                            <constraint firstItem="2QF-hy-b0t" firstAttribute="centerY" secondItem="kwg-gu-3fg" secondAttribute="centerY" id="MWJ-Qk-Rsw"/>
+                            <constraint firstAttribute="bottom" secondItem="bf9-pJ-vfO" secondAttribute="bottom" constant="4" id="35p-eC-4ju"/>
+                            <constraint firstAttribute="trailing" secondItem="bf9-pJ-vfO" secondAttribute="trailing" constant="4" id="803-QW-T5A"/>
+                            <constraint firstItem="bf9-pJ-vfO" firstAttribute="top" secondItem="kwg-gu-3fg" secondAttribute="top" constant="4" id="B5E-JG-2fc"/>
+                            <constraint firstItem="bf9-pJ-vfO" firstAttribute="leading" secondItem="kwg-gu-3fg" secondAttribute="leading" constant="4" id="gpf-4k-KPu"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -87,7 +99,7 @@
             <connections>
                 <outlet property="mainImage" destination="NYS-51-XQ8" id="OU7-bc-Io6"/>
                 <outlet property="mainTitle" destination="EQs-Gw-ThL" id="JKY-d7-qE1"/>
-                <outlet property="mainView" destination="kwg-gu-3fg" id="t7s-VJ-3Ub"/>
+                <outlet property="mainView" destination="bf9-pJ-vfO" id="4Qg-7z-MpM"/>
                 <outlet property="secondTitle" destination="Gam-hW-oRI" id="47H-4V-F4g"/>
             </connections>
             <point key="canvasLocation" x="12" y="70"/>

@@ -58,7 +58,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="skipButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uG-Rb-YPd"/>
-                                            <segue destination="tke-94-TxN" kind="presentation" id="423-LX-nsN"/>
+                                            <segue destination="tke-94-TxN" kind="presentation" modalPresentationStyle="overFullScreen" id="423-LX-nsN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYg-Ut-Y2L">
@@ -73,7 +73,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="skipButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmC-Pn-WB7"/>
-                                            <segue destination="tke-94-TxN" kind="presentation" id="Fbp-sV-mSN"/>
+                                            <segue destination="tke-94-TxN" kind="presentation" modalPresentationStyle="overFullScreen" id="Fbp-sV-mSN"/>
                                         </connections>
                                     </button>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="zCy-8P-gcd" userLabel="pageControl">
@@ -133,7 +133,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fbp-sV-mSN"/>
+        <segue reference="423-LX-nsN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentBlur">

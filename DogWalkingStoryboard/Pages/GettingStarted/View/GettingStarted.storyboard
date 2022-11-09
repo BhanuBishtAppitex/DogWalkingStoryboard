@@ -58,56 +58,47 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHy-1v-Fp3" userLabel="buttonStackView">
                                                 <rect key="frame" x="24" y="103" width="366" height="117"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiY-nD-T0Y" userLabel="logInButton" customClass="CustomUIButtom" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6p-hd-eit">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="bKX-Td-EZF"/>
+                                                            <constraint firstAttribute="height" constant="50" id="h9B-Gk-Z8I"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
+                                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="baseBackgroundColor" name="AccentColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Wxa-ZW-EYi" kind="presentation" modalPresentationStyle="fullScreen" id="tiW-4T-kE8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztT-Ok-Bya" customClass="CustomUIButtom" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="67" width="366" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="rgG-51-RTD"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Create Account"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Create Account">
+                                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                                            <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="24"/>
+                                                                <real key="value" value="25"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="0.0"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="logInButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9yk-Bg-zgm"/>
-                                                            <segue destination="Wxa-ZW-EYi" kind="presentation" identifier="gettingStartedToLogin" modalPresentationStyle="automatic" id="YqC-I9-Y23"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-gU-e6T" userLabel="creatAccountButton" customClass="CustomUIButtom" customModule="DogWalkingStoryboard">
-                                                        <rect key="frame" x="0.0" y="67" width="366" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="YU0-ok-m6S"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="Create Account">
-                                                            <color key="baseForegroundColor" name="AccentColor"/>
-                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                        <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                 <color key="value" name="AccentColor"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="25"/>
-                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="createAccountButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DEp-eX-eIF"/>
-                                                            <segue destination="bFu-hp-Sqg" kind="presentation" modalPresentationStyle="automatic" id="DLc-24-4mP"/>
+                                                            <segue destination="bFu-hp-Sqg" kind="presentation" modalPresentationStyle="fullScreen" id="hon-Px-wmz"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="AccentBlur"/>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -135,8 +126,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="createAccountButton" destination="jAC-gU-e6T" id="FxW-y4-PwD"/>
-                        <outlet property="loginButton" destination="CiY-nD-T0Y" id="3Nk-Ea-f4v"/>
+                        <outlet property="createAccountButton" destination="ztT-Ok-Bya" id="bLh-3M-eII"/>
+                        <outlet property="loginButton" destination="P6p-hd-eit" id="Nhw-jI-4zI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,9 +137,9 @@
         <!--LoginViewController-->
         <scene sceneID="SUf-GU-NXA">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="Wxa-ZW-EYi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="Wxa-ZW-EYi" customClass="LoginPageViewController" customModule="DogWalkingStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9rP-No-CzC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Iy-k4-Qw9">
@@ -220,7 +211,7 @@
                                     <constraint firstAttribute="height" constant="50" id="6Q3-E0-dKU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button" subtitle="" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Login" subtitle="" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -229,10 +220,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="iZR-OG-FTh" kind="presentation" modalPresentationStyle="automatic" id="e8o-kj-Q5F"/>
+                                    <segue destination="iZR-OG-FTh" kind="presentation" modalPresentationStyle="fullScreen" id="e8o-kj-Q5F"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account? Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZX-Sk-ixW">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account? Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZX-Sk-ixW">
                                 <rect key="frame" x="95" y="556" width="224.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                 <color key="textColor" name="TextColorSecondary"/>
@@ -263,6 +254,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dD3-7c-EXa"/>
+                    <connections>
+                        <outlet property="dontHaveAccountLabel" destination="CZX-Sk-ixW" id="hFj-lU-JXW"/>
+                        <outlet property="loginButton" destination="sJA-C2-cQT" id="6bJ-uE-hA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcH-Sz-2VR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,9 +266,9 @@
         <!--SignupViewController-->
         <scene sceneID="mBg-I9-Gob">
             <objects>
-                <viewController storyboardIdentifier="SignupViewController" id="bFu-hp-Sqg" userLabel="SignupViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" id="bFu-hp-Sqg" userLabel="SignupViewController" customClass="SignupPageViewController" customModule="DogWalkingStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j5o-2x-aZw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="reo-fl-30b">
@@ -321,14 +316,14 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-Rc-VcC" userLabel="radioButton&amp;LabelSV">
-                                <rect key="frame" x="24" y="420" width="366" height="45"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-Rc-VcC" userLabel="radioButton&amp;LabelSV">
+                                <rect key="frame" x="24" y="425" width="366" height="77"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hcU-3I-DCs">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="15"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hcU-3I-DCs">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM7-ET-ny5">
-                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <rect key="frame" x="0.0" y="9.5" width="15" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Zf9-V8-02k"/>
                                                     <constraint firstAttribute="width" constant="15" id="wGK-CV-SDx"/>
@@ -337,10 +332,10 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="RadioButton"/>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEH-46-xHS">
-                                                <rect key="frame" x="22" y="0.0" width="344" height="15"/>
+                                                <rect key="frame" x="22" y="0.0" width="344" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, i agree to the Terms of Service and acknowledge the Privacy Statement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjK-NU-R6H">
-                                                        <rect key="frame" x="0.0" y="-8" width="344" height="31"/>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, i agree to the Terms of Service and acknowledge the Privacy Statement" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjK-NU-R6H">
+                                                        <rect key="frame" x="0.0" y="1.5" width="344" height="31"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
                                                         <color key="textColor" name="TextColorSecondary"/>
                                                         <nil key="highlightedColor"/>
@@ -355,12 +350,15 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="qEv-aY-404"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-TU-CWt">
-                                        <rect key="frame" x="0.0" y="30" width="366" height="15"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-TU-CWt">
+                                        <rect key="frame" x="0.0" y="43" width="366" height="34"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJP-w2-yRk">
-                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <rect key="frame" x="0.0" y="9.5" width="15" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="aQ5-Hf-oTN"/>
                                                     <constraint firstAttribute="width" constant="15" id="xCH-F8-Nw7"/>
@@ -369,10 +367,10 @@
                                                 <buttonConfiguration key="configuration" style="plain" image="RadioButton"/>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSS-hA-HLf">
-                                                <rect key="frame" x="22" y="0.0" width="344" height="15"/>
+                                                <rect key="frame" x="22" y="0.0" width="344" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, keep me updated with new features and promotions. I can opt out at any time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYw-Wh-Q4I">
-                                                        <rect key="frame" x="0.0" y="-8" width="344" height="31"/>
+                                                        <rect key="frame" x="0.0" y="1.5" width="344" height="31"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
                                                         <color key="textColor" name="TextColorSecondary"/>
                                                         <nil key="highlightedColor"/>
@@ -391,7 +389,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sib-1n-iKo">
-                                <rect key="frame" x="24" y="497" width="366" height="50"/>
+                                <rect key="frame" x="24" y="534" width="366" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="sdE-HR-Wuo"/>
                                 </constraints>
@@ -400,11 +398,11 @@
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="iZR-OG-FTh" kind="presentation" modalPresentationStyle="automatic" id="2lo-l3-cqj"/>
+                                    <segue destination="iZR-OG-FTh" kind="presentation" modalPresentationStyle="fullScreen" id="2lo-l3-cqj"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cjp-uz-FlS" userLabel="bottomStackView">
-                                <rect key="frame" x="35" y="560" width="344" height="134"/>
+                                <rect key="frame" x="35" y="597" width="344" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or sign up with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-FX-csX">
                                         <rect key="frame" x="120" y="0.0" width="104.5" height="20"/>
@@ -439,10 +437,10 @@
                                             <constraint firstAttribute="height" constant="50" id="Ko1-lD-ead"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVr-jk-X3f">
-                                        <rect key="frame" x="60" y="114" width="224.5" height="20"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
-                                        <color key="textColor" name="TextColorSecondary"/>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVr-jk-X3f">
+                                        <rect key="frame" x="61" y="114" width="222" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" red="0.23137254901960785" green="0.28235294117647058" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -451,7 +449,7 @@
                         <viewLayoutGuide key="safeArea" id="TKo-hZ-veh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hg7-Rc-VcC" firstAttribute="top" secondItem="sWx-8J-cgy" secondAttribute="bottom" constant="13" id="01R-pb-Vnc"/>
+                            <constraint firstItem="hg7-Rc-VcC" firstAttribute="top" secondItem="sWx-8J-cgy" secondAttribute="bottom" constant="18" id="01R-pb-Vnc"/>
                             <constraint firstItem="reo-fl-30b" firstAttribute="top" secondItem="TKo-hZ-veh" secondAttribute="top" id="0YA-W3-qR9"/>
                             <constraint firstItem="ENK-DE-zh2" firstAttribute="top" secondItem="reo-fl-30b" secondAttribute="bottom" constant="10" id="1va-bj-9yD"/>
                             <constraint firstItem="TKo-hZ-veh" firstAttribute="trailing" secondItem="sWx-8J-cgy" secondAttribute="trailing" constant="24" id="ADW-ji-QCN"/>
@@ -473,6 +471,10 @@
                             <constraint firstItem="Cjp-uz-FlS" firstAttribute="centerX" secondItem="j5o-2x-aZw" secondAttribute="centerX" id="xwJ-cp-Yov"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alreadyHaveAnAccountLabel" destination="uVr-jk-X3f" id="llJ-qa-NgD"/>
+                        <outlet property="termsAndConditionLabel" destination="IjK-NU-R6H" id="ojd-5f-vCz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orl-Bg-Dx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,7 +485,7 @@
             <objects>
                 <viewController storyboardIdentifier="ChooseLocationViewController" id="iZR-OG-FTh" userLabel="ChooseLocationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KaO-6m-gBJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChooseLocation" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-Bo-wP0">
@@ -526,11 +528,11 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="CornerColor"/>
+                                        <color key="value" name="BorderColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="HC2-Bc-emk" kind="presentation" id="pRY-Fz-UBA"/>
+                                    <segue destination="HC2-Bc-emk" kind="presentation" modalPresentationStyle="overFullScreen" id="pRY-Fz-UBA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -559,25 +561,24 @@
         <!--MainTabBarController-->
         <scene sceneID="zyn-lL-Pi4">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ChooseLocationToTabBar" storyboardName="MainTabBar" referencedIdentifier="MainTabBarController" id="HC2-Bc-emk" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="ChooseLocationToTabBar" storyboardName="MainTabBar" referencedIdentifier="MainTabBarController" id="HC2-Bc-emk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JVz-9n-8WY"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXx-Qc-me4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3900" y="8"/>
         </scene>
     </scenes>
     <designables>
-        <designable name="CiY-nD-T0Y">
-            <size key="intrinsicContentSize" width="59.5" height="31"/>
-        </designable>
-        <designable name="jAC-gU-e6T">
-            <size key="intrinsicContentSize" width="124.5" height="31"/>
-        </designable>
         <designable name="uQp-1s-LM8">
             <size key="intrinsicContentSize" width="82.5" height="31"/>
         </designable>
+        <designable name="ztT-Ok-Bya">
+            <size key="intrinsicContentSize" width="124.5" height="31"/>
+        </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="2lo-l3-cqj"/>
+        <segue reference="e8o-kj-Q5F"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Apple" width="50" height="50"/>
@@ -587,14 +588,11 @@
         <image name="Google" width="50" height="50"/>
         <image name="LoginLogo" width="150" height="150"/>
         <image name="RadioButton" width="15" height="15"/>
-        <namedColor name="AccentBlur">
-            <color red="0.99215686274509807" green="0.92549019607843142" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="AccentColor">
             <color red="0.93333333333333335" green="0.42352941176470588" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="CornerColor">
-            <color red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BorderColor">
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColorDull">
             <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

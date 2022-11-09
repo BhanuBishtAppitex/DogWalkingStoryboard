@@ -22,7 +22,10 @@ class DoggyDayCareViewController: UIViewController {
         tableView.delegate = self
     }
     
-
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }
 
 
@@ -56,8 +59,10 @@ extension DoggyDayCareViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let storyboard = UIStoryboard(name: "TrainerPageStoryBoard", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TrainerPage")
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
     

@@ -14,10 +14,13 @@
 		5212EA6F291A252F007522BD /* CellForReviewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5212EA6D291A252F007522BD /* CellForReviewsView.xib */; };
 		5212EA72291A53E4007522BD /* ContactPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA71291A53E4007522BD /* ContactPageViewController.swift */; };
 		5212EA74291A5516007522BD /* ModelForContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212EA73291A5516007522BD /* ModelForContactPage.swift */; };
+		5225A7DA291BCA57008BCB3A /* DogWalkingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A7D9291BCA57008BCB3A /* DogWalkingTwoViewController.swift */; };
+		5225A7DC291BCC62008BCB3A /* UploadDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A7DB291BCC62008BCB3A /* UploadDetailsViewController.swift */; };
+		5225A7E1291BDC0A008BCB3A /* CellForYourPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225A7DF291BDC0A008BCB3A /* CellForYourPet.swift */; };
+		5225A7E2291BDC0A008BCB3A /* CellForYourPet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5225A7E0291BDC0A008BCB3A /* CellForYourPet.xib */; };
 		5227A0E5291298EE0025B26F /* ServicesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0E4291298EE0025B26F /* ServicesPageViewController.swift */; };
 		5227A0E7291299EC0025B26F /* ModelForServicesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0E6291299EC0025B26F /* ModelForServicesPage.swift */; };
 		5227A0EC29129F260025B26F /* YourPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0EB29129F260025B26F /* YourPetsViewController.swift */; };
-		5227A0EE29129F710025B26F /* CellForYourPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0ED29129F710025B26F /* CellForYourPet.swift */; };
 		5227A0F02912A0FA0025B26F /* ModelForYourPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0EF2912A0FA0025B26F /* ModelForYourPet.swift */; };
 		5227A0F52912A6790025B26F /* MorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0F42912A6790025B26F /* MorePageViewController.swift */; };
 		5227A0F72912A6880025B26F /* ModelForMorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227A0F62912A6880025B26F /* ModelForMorePage.swift */; };
@@ -70,6 +73,8 @@
 		52C9AD3F2913E7CF00BC340A /* DogWalking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C9AD3E2913E7CF00BC340A /* DogWalking.storyboard */; };
 		52C9AD422913EFF900BC340A /* DogWalkingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9AD412913EFF900BC340A /* DogWalkingOneViewController.swift */; };
 		52DE6068291B7BD300DFE9CF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6067291B7BD300DFE9CF /* CustomTextField.swift */; };
+		52EB790D291BB8340007D695 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB790C291BB8340007D695 /* LoginPageViewController.swift */; };
+		52EB790F291BBAB20007D695 /* SignupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB790E291BBAB20007D695 /* SignupPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,10 +85,13 @@
 		5212EA6D291A252F007522BD /* CellForReviewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForReviewsView.xib; sourceTree = "<group>"; };
 		5212EA71291A53E4007522BD /* ContactPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPageViewController.swift; sourceTree = "<group>"; };
 		5212EA73291A5516007522BD /* ModelForContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForContactPage.swift; sourceTree = "<group>"; };
+		5225A7D9291BCA57008BCB3A /* DogWalkingTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkingTwoViewController.swift; sourceTree = "<group>"; };
+		5225A7DB291BCC62008BCB3A /* UploadDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDetailsViewController.swift; sourceTree = "<group>"; };
+		5225A7DF291BDC0A008BCB3A /* CellForYourPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForYourPet.swift; sourceTree = "<group>"; };
+		5225A7E0291BDC0A008BCB3A /* CellForYourPet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForYourPet.xib; sourceTree = "<group>"; };
 		5227A0E4291298EE0025B26F /* ServicesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPageViewController.swift; sourceTree = "<group>"; };
 		5227A0E6291299EC0025B26F /* ModelForServicesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForServicesPage.swift; sourceTree = "<group>"; };
 		5227A0EB29129F260025B26F /* YourPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPetsViewController.swift; sourceTree = "<group>"; };
-		5227A0ED29129F710025B26F /* CellForYourPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForYourPet.swift; sourceTree = "<group>"; };
 		5227A0EF2912A0FA0025B26F /* ModelForYourPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForYourPet.swift; sourceTree = "<group>"; };
 		5227A0F42912A6790025B26F /* MorePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePageViewController.swift; sourceTree = "<group>"; };
 		5227A0F62912A6880025B26F /* ModelForMorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForMorePage.swift; sourceTree = "<group>"; };
@@ -138,6 +146,8 @@
 		52C9AD3E2913E7CF00BC340A /* DogWalking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogWalking.storyboard; sourceTree = "<group>"; };
 		52C9AD412913EFF900BC340A /* DogWalkingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkingOneViewController.swift; sourceTree = "<group>"; };
 		52DE6067291B7BD300DFE9CF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		52EB790C291BB8340007D695 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		52EB790E291BBAB20007D695 /* SignupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +172,8 @@
 		5227A0E929129F090025B26F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5227A0ED29129F710025B26F /* CellForYourPet.swift */,
+				5225A7DF291BDC0A008BCB3A /* CellForYourPet.swift */,
+				5225A7E0291BDC0A008BCB3A /* CellForYourPet.xib */,
 				5286899F2915270D0087487C /* SubViews */,
 			);
 			path = View;
@@ -233,6 +244,7 @@
 			children = (
 				52C9AD3E2913E7CF00BC340A /* DogWalking.storyboard */,
 				52C9AD412913EFF900BC340A /* DogWalkingOneViewController.swift */,
+				5225A7D9291BCA57008BCB3A /* DogWalkingTwoViewController.swift */,
 			);
 			path = DogWalking;
 			sourceTree = "<group>";
@@ -341,6 +353,7 @@
 			children = (
 				528689A2291527500087487C /* AddAPet.storyboard */,
 				528689A4291545A90087487C /* AddAPetViewController.swift */,
+				5225A7DB291BCC62008BCB3A /* UploadDetailsViewController.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -408,6 +421,8 @@
 			isa = PBXGroup;
 			children = (
 				5288381429126188009A4D59 /* GettingStartedViewController.swift */,
+				52EB790C291BB8340007D695 /* LoginPageViewController.swift */,
+				52EB790E291BBAB20007D695 /* SignupPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -459,7 +474,6 @@
 			isa = PBXGroup;
 			children = (
 				5288381D2912829A009A4D59 /* MainTabBar.storyboard */,
-				5286899D291523120087487C /* MainTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,6 +488,7 @@
 		5288382129128A10009A4D59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5286899D291523120087487C /* MainTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -737,6 +752,7 @@
 				523A19EC291905980034ACF5 /* TrainerPageStoryBoard.storyboard in Resources */,
 				528837F729122E5A009A4D59 /* RobotoSlab-Bold.ttf in Resources */,
 				5288380229122EA6009A4D59 /* Poppins-Bold.ttf in Resources */,
+				5225A7E2291BDC0A008BCB3A /* CellForYourPet.xib in Resources */,
 				52AE1ABC29114FF3008849CA /* Assets.xcassets in Resources */,
 				5286899A291518760087487C /* CellForServicePage.xib in Resources */,
 				5288380629122EA6009A4D59 /* Poppins-Medium.ttf in Resources */,
@@ -760,6 +776,7 @@
 				5227A0F52912A6790025B26F /* MorePageViewController.swift in Sources */,
 				5235B4E529154A7A00C43734 /* CellForSettingPage.swift in Sources */,
 				5235B4E929154D8800C43734 /* SettingViewController.swift in Sources */,
+				5225A7DA291BCA57008BCB3A /* DogWalkingTwoViewController.swift in Sources */,
 				5227A0E7291299EC0025B26F /* ModelForServicesPage.swift in Sources */,
 				523A19EE291908710034ACF5 /* CustomImageView.swift in Sources */,
 				52AE1AB729114FF2008849CA /* ViewController.swift in Sources */,
@@ -775,13 +792,13 @@
 				5288381A29126648009A4D59 /* CustomUIButtom.swift in Sources */,
 				5288381529126188009A4D59 /* GettingStartedViewController.swift in Sources */,
 				5227A0F72912A6880025B26F /* ModelForMorePage.swift in Sources */,
+				5225A7E1291BDC0A008BCB3A /* CellForYourPet.swift in Sources */,
 				523A19E42918E60F0034ACF5 /* CellForDoggyDayCare.swift in Sources */,
 				5277694A291397E1003697BE /* CustomCornerRadiusView.swift in Sources */,
 				52AE1AB529114FF2008849CA /* SceneDelegate.swift in Sources */,
 				5212EA67291A16CD007522BD /* ModelForTrainerPageInfoView.swift in Sources */,
 				5227A0E5291298EE0025B26F /* ServicesPageViewController.swift in Sources */,
 				52C9AD422913EFF900BC340A /* DogWalkingOneViewController.swift in Sources */,
-				5227A0EE29129F710025B26F /* CellForYourPet.swift in Sources */,
 				5212EA74291A5516007522BD /* ModelForContactPage.swift in Sources */,
 				523A19E92918FBC30034ACF5 /* ModelForDoggyDayCare.swift in Sources */,
 				528689952914F4980087487C /* CellForMainPage.swift in Sources */,
@@ -789,10 +806,13 @@
 				527769532913B579003697BE /* InboxViewController.swift in Sources */,
 				52883809291230C7009A4D59 /* Constants.swift in Sources */,
 				527769552913B663003697BE /* ModelForInboxPage.swift in Sources */,
+				52EB790D291BB8340007D695 /* LoginPageViewController.swift in Sources */,
+				5225A7DC291BCC62008BCB3A /* UploadDetailsViewController.swift in Sources */,
 				523A19D52918CB210034ACF5 /* ModelForSettingViewController.swift in Sources */,
 				5212EA6A291A189E007522BD /* CellForMorePage.swift in Sources */,
 				5288380B291231E6009A4D59 /* ModelForIntrodcutoryPage.swift in Sources */,
 				523A19E72918ED030034ACF5 /* DoggyDayCareViewController.swift in Sources */,
+				52EB790F291BBAB20007D695 /* SignupPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
