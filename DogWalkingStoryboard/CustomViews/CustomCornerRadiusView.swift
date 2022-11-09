@@ -51,16 +51,16 @@ class CustomCornerRadiusView: UIView {
             layer.shadowRadius = newValue
         }
     }
-    @IBInspectable
-    var shadowOffset : CGSize{
+   @IBInspectable
+   var shadowOffset : CGSize{
 
-        get{
-            return layer.shadowOffset
-        }set{
+       get{
+           return layer.shadowOffset
+       }set{
 
-            layer.shadowOffset = newValue
-        }
-    }
+           layer.shadowOffset = newValue
+       }
+   }
 
     @IBInspectable
     var shadowColor : UIColor{

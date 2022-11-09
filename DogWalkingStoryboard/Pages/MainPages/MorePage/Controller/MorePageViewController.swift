@@ -35,7 +35,6 @@ extension MorePageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tabelView.dequeueReusableCell(withIdentifier: "CellForMorePage", for: indexPath) as! CellForMorePage
         cell.leftImage.image = UIImage(named: ModelForMorePage.leftImage[indexPath.section])
-        print("mainLabel : \(ModelForMorePage.mainTitle[indexPath.section])")
         cell.mainLabel.text = ModelForMorePage.mainTitle[indexPath.section]
         cell.rightImage.image = UIImage(named: ModelForMorePage.rightImage)
         return cell

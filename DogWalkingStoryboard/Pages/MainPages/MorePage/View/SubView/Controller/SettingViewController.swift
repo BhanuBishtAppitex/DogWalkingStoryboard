@@ -46,26 +46,28 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cell.identifierString, for: indexPath) as! CellForSettingPage
+        cell.rightSwitch.isHidden = true
+        let section = indexPath.section
         if tableView == self.generalTableView {
-            let cell = tableView.dequeueReusableCell(withIdentifier: cell.identifierString, for: indexPath) as! CellForSettingPage
             let genralData = data.GeneralCell.self
-            let section = indexPath.section
             cell.leftLabel.text = genralData.leftLabel[section]
             cell.rightLabel.text = genralData.rightLabel[section]
             cell.rightImage.image = UIImage(named: genralData.rightImage[section])
-            if genralData.rightLabel[section] == "" {
+            if genralData.rightLabel[section] == "nil" {
                 cell.rightLabel.isHidden = true
             } else {
                 cell.rightImage.isHidden = true
             }
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: cell.identifierString, for: indexPath) as! CellForSettingPage
             let aboutData = data.AboutCell.self
-            let section = indexPath.section
             cell.leftLabel.text = aboutData.leftLabel[section]
             cell.rightLabel.text = aboutData.rightLabel[section]
             cell.rightImage.image = UIImage(named: aboutData.rightImage[section])
+            if aboutData.rightLabel[section] == "nil" {
+                cell.rightLabel.isHidden = true
+            }
             return cell
         }
     }

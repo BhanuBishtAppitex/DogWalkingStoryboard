@@ -31,10 +31,12 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oPy-DS-y6t">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPy-DS-y6t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="AccentBlur"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
                         <outlet property="tabbar" destination="oPy-DS-y6t" id="gqi-J5-BEU"/>
@@ -257,32 +259,32 @@
                                 <color key="textColor" name="TextColorPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-9T-oVj">
-                                <rect key="frame" x="24" y="117.5" width="366" height="85"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="10" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-9T-oVj">
+                                <rect key="frame" x="24" y="117.5" width="366" height="95"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="O6c-p6-vgS"/>
+                                    <constraint firstAttribute="height" constant="95" id="O6c-p6-vgS"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForYourPetsPage" rowHeight="178" id="e7K-Oi-Swm" customClass="CellForYourPet" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="366" height="178"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellForYourPetsPage" rowHeight="95" id="e7K-Oi-Swm" customClass="CellForYourPet" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="366" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7K-Oi-Swm" id="TTb-vM-F4H">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="178"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="U6N-Hz-MXZ">
-                                                    <rect key="frame" x="20" y="11" width="326" height="156"/>
+                                                    <rect key="frame" x="20" y="11" width="326" height="73"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-jX-4fl">
-                                                            <rect key="frame" x="0.0" y="53" width="50" height="50"/>
+                                                            <rect key="frame" x="0.0" y="11.5" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="2PA-Jd-txW"/>
                                                                 <constraint firstAttribute="height" constant="50" id="koc-rc-RWm"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="aFR-nA-cln">
-                                                            <rect key="frame" x="57" y="51" width="269" height="54.5"/>
+                                                            <rect key="frame" x="57" y="9.5" width="269" height="54.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bolt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8g-K7-qNA">
                                                                     <rect key="frame" x="0.0" y="0.0" width="30.5" height="22.5"/>
@@ -329,7 +331,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-oV-Ufm" customClass="CustomUIButtom" customModule="DogWalkingStoryboard">
-                                <rect key="frame" x="24" y="235.5" width="366" height="50"/>
+                                <rect key="frame" x="24" y="245.5" width="366" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MSh-0y-o8f"/>
                                 </constraints>
@@ -414,7 +416,7 @@
                                         <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7om-DL-UGp">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="15" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7om-DL-UGp">
                                         <rect key="frame" x="0.0" y="34" width="366" height="337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
@@ -459,7 +461,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a Sitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qee-4Y-w9o">
                                                         <rect key="frame" x="49" y="16.5" width="235" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="TextColorSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="1h9-8o-Wen">
@@ -552,6 +554,9 @@
         </namedColor>
         <namedColor name="TextColorPrimary">
             <color red="0.16078431372549021" green="0.19607843137254902" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColorSecondary">
+            <color red="0.23137254901960785" green="0.28235294117647058" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

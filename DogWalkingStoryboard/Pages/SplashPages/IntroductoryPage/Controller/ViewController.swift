@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     let data = ModelForIntroductoryPage.self
+    let scrollView = UIScrollView()
+   
     
     
     //MARK: - IBOutLet
@@ -32,8 +34,16 @@ class ViewController: UIViewController {
     
     //MARK: - Button methods
     @IBAction func skipButtonPressed(_ sender: UIButton) {
-       print("skipButtonPressed")
+        print("skipButtonPressed")
         
+    }
+    
+   
+    @IBAction func pageControllerValueChanged(_ sender: UIPageControl, forEvent event: UIEvent) {
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseInOut) {
+            self.collectionView.contentOffset.x = CGFloat(self.pageControl.currentPage) * self.view.frame.width
+        }
+
     }
     
     
@@ -48,13 +58,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellForMainPage.identifierText, for: indexPath) as! CellForMainPage
-        //cell.translatesAutoresizingMaskIntoConstraints = false
-    
-        NSLayoutConstraint.activate([
-            cell.widthAnchor.constraint(equalToConstant: view.frame.width),
-            cell.heightAnchor.constraint(equalToConstant: collectionView.frame.height),
-           
-        ])
         cell.mainImage.image = UIImage(named: data.mainImage[indexPath.row])
         cell.mainTitle.text = data.mainTitle[indexPath.row]
         cell.secondTitle.text = data.secondTitle[indexPath.row]
@@ -66,11 +69,24 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAtIndexPath indexPath:  NSIndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
     
-
+    
+    
     
     //MARK: - scroll view method to assing page controller current page
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.x <= 0 {
+            scrollView.contentOffset.x = 0
+        } else if scrollView.contentOffset.x >= scrollView.contentSize.width-scrollView.frame.width {
+            UIView.animate(withDuration: 1.0, delay: 0.1, options: .curveEaseInOut) {
+                scrollView.isScrollEnabled = false
+            }
+        }
         let scrollPos = scrollView.contentOffset.x / view.frame.width
         pageControl.currentPage = Int(scrollPos)
         let scrollViewXOffset = scrollView.contentOffset.x
@@ -83,7 +99,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
                 self.swipeLeftText.isHidden = true
                 self.continueButton.isHidden = false
             }
-        
         } else {
             UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseInOut) {
                 self.pageControl.isHidden = false
@@ -94,4 +109,5 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         }
     }
 }
+
 

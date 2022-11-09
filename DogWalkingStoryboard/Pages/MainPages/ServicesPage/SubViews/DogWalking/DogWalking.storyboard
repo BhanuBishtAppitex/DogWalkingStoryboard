@@ -60,7 +60,7 @@
                                 <color key="textColor" name="TextColorSecondary"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyI-HO-hex" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyI-HO-hex" userLabel="mainView" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                 <rect key="frame" x="24" y="198" width="366" height="313"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Size (kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3C-Oj-agH">
@@ -72,7 +72,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KmC-2v-ZaV">
                                         <rect key="frame" x="25" y="55.5" width="316" height="45"/>
                                         <subviews>
-                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1w-1H-WCu" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard">
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1w-1H-WCu" userLabel="0-7View" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard">
                                                 <rect key="frame" x="0.0" y="0.0" width="85" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0-7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cq-kF-T6E">
@@ -93,21 +93,12 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                        <size key="value" width="0.0" height="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="CornerColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU8-sc-qFZ" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard">
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU8-sc-qFZ" userLabel="7-18View" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard">
                                                 <rect key="frame" x="115.5" y="0.0" width="85" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7-18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-ss-O0g">
@@ -131,18 +122,9 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="CornerColor"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                        <size key="value" width="0.0" height="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7t-6a-tbM" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard">
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7t-6a-tbM" userLabel="18-45View" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard">
                                                 <rect key="frame" x="231" y="0.0" width="85" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18-45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5u-RO-rrV">
@@ -166,15 +148,6 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" name="CornerColor"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                        <size key="value" width="0.0" height="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
@@ -182,7 +155,7 @@
                                             <constraint firstAttribute="height" constant="45" id="9RS-0h-9uy"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogM-hw-efk" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogM-hw-efk" userLabel="45+View" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="25" y="117.5" width="85" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bj-5S-9J0">
@@ -217,10 +190,10 @@
                                         <color key="textColor" name="TextColorPrimary"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xYp-4a-E0F">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xYp-4a-E0F">
                                         <rect key="frame" x="20" y="232" width="326" height="45"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-JS-M1d" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-JS-M1d" userLabel="puppyView" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="210" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puppy(less than 1 year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nE-MM-AHw">
@@ -248,11 +221,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DU-KL-a53" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                                <rect key="frame" x="220" y="0.0" width="106" height="45"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DU-KL-a53" userLabel="adultView" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
+                                                <rect key="frame" x="251" y="0.0" width="75" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-9Y-GYm">
-                                                        <rect key="frame" x="34.5" y="12.5" width="37.5" height="20"/>
+                                                        <rect key="frame" x="19" y="12.5" width="37.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="TextColorPrimary"/>
                                                         <nil key="highlightedColor"/>
@@ -307,20 +280,11 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.24932740066225165" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
-                                        <size key="value" width="10" height="10"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                         <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -491,14 +455,8 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                         <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" name="CornerColor"/>

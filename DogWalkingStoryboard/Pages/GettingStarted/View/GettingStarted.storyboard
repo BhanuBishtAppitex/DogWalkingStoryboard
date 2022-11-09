@@ -76,6 +76,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
+                                                            <action selector="logInButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9yk-Bg-zgm"/>
                                                             <segue destination="Wxa-ZW-EYi" kind="presentation" identifier="gettingStartedToLogin" modalPresentationStyle="automatic" id="YqC-I9-Y23"/>
                                                         </connections>
                                                     </button>
@@ -101,6 +102,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
+                                                            <action selector="createAccountButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DEp-eX-eIF"/>
                                                             <segue destination="bFu-hp-Sqg" kind="presentation" modalPresentationStyle="automatic" id="DLc-24-4mP"/>
                                                         </connections>
                                                     </button>
@@ -132,6 +134,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TdF-Lc-Jvw" secondAttribute="trailing" id="rNU-g0-Uro"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createAccountButton" destination="jAC-gU-e6T" id="FxW-y4-PwD"/>
+                        <outlet property="loginButton" destination="CiY-nD-T0Y" id="3Nk-Ea-f4v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,23 +167,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="QcY-Wj-oZZ">
                                 <rect key="frame" x="24" y="327" width="366" height="106"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-8d-EgC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-8d-EgC" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="chy-dB-DGh"/>
                                         </constraints>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="TextColorDull"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noz-5K-cCA">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noz-5K-cCA" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="56" width="366" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ydx-n4-tGp"/>
                                         </constraints>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="TextColorDull"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -286,32 +292,32 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-8J-cgy" userLabel="mainStackView">
                                 <rect key="frame" x="24" y="189" width="366" height="218"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udv-0w-bxH">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udv-0w-bxH" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="FIn-gr-pIe"/>
                                         </constraints>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="TextColorSecondary"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHX-nc-Hdi">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHX-nc-Hdi" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="56" width="366" height="50"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="TextColorSecondary"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtM-lk-o92">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtM-lk-o92" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="112" width="366" height="50"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="TextColorSecondary"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mib-8e-h4W">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mib-8e-h4W" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="168" width="366" height="50"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="TextColorSecondary"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -493,7 +499,7 @@
                                 <color key="textColor" name="TextColorPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-L1-Z1h">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-L1-Z1h" customClass="CustomTextField" customModule="DogWalkingStoryboard" customModuleProvider="target">
                                 <rect key="frame" x="24" y="425" width="366" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="fCy-CQ-KAX"/>
@@ -520,7 +526,7 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" name="CornerColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -571,7 +577,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="e8o-kj-Q5F"/>
+        <segue reference="2lo-l3-cqj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Apple" width="50" height="50"/>
@@ -586,6 +592,12 @@
         </namedColor>
         <namedColor name="AccentColor">
             <color red="0.93333333333333335" green="0.42352941176470588" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="CornerColor">
+            <color red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColorDull">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColorPrimary">
             <color red="0.16078431372549021" green="0.19607843137254902" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

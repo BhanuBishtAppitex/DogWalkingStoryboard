@@ -13,10 +13,6 @@ class CellForMainPage: UICollectionViewCell {
     static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
-    @IBOutlet weak var leading: NSLayoutConstraint!
-    @IBOutlet weak var trailing: NSLayoutConstraint!
-    @IBOutlet weak var bottom: NSLayoutConstraint!
-    @IBOutlet weak var top: NSLayoutConstraint!
     
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var mainTitle: UILabel!
@@ -30,7 +26,8 @@ class CellForMainPage: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-      
+        contentView.backgroundColor = UIColor(named: C.Colors.AccentColor)
+        
         
     }
 

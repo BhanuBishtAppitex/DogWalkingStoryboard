@@ -54,10 +54,10 @@ class MainTabBarController: UITabBarController {
        //  }
         
         NSLayoutConstraint.activate([
-            tabbar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            tabbar.widthAnchor.constraint(equalToConstant: view.frame.width),
+         //   tabbar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+          //  tabbar.widthAnchor.constraint(equalToConstant: view.frame.width),
            // tabbar.heightAnchor.constraint(equalToConstant: view.frame.size.height - ((0.1030)*view.frame.height) ),
-            tabbar.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+          //  tabbar.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
      
         }

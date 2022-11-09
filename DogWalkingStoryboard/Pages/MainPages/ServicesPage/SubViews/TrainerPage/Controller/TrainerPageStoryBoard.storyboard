@@ -230,7 +230,7 @@
                                                                     <constraint firstAttribute="height" constant="42" id="m2g-4H-l1e"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="9" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HeB-Wa-hzJ">
+                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="9" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HeB-Wa-hzJ">
                                                                 <rect key="frame" x="24" y="59" width="366" height="337"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <color key="sectionIndexBackgroundColor" systemColor="tintColor"/>

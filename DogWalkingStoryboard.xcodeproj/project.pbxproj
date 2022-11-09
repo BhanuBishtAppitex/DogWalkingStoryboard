@@ -69,6 +69,7 @@
 		52AE1ABF29114FF3008849CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AE1ABD29114FF3008849CA /* LaunchScreen.storyboard */; };
 		52C9AD3F2913E7CF00BC340A /* DogWalking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C9AD3E2913E7CF00BC340A /* DogWalking.storyboard */; };
 		52C9AD422913EFF900BC340A /* DogWalkingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9AD412913EFF900BC340A /* DogWalkingOneViewController.swift */; };
+		52DE6068291B7BD300DFE9CF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6067291B7BD300DFE9CF /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		52AE1AC029114FF3008849CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C9AD3E2913E7CF00BC340A /* DogWalking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DogWalking.storyboard; sourceTree = "<group>"; };
 		52C9AD412913EFF900BC340A /* DogWalkingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkingOneViewController.swift; sourceTree = "<group>"; };
+		52DE6067291B7BD300DFE9CF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,6 +428,7 @@
 				5288381929126648009A4D59 /* CustomUIButtom.swift */,
 				52776949291397E1003697BE /* CustomCornerRadiusView.swift */,
 				523A19ED291908710034ACF5 /* CustomImageView.swift */,
+				52DE6067291B7BD300DFE9CF /* CustomTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				5288382829128A76009A4D59 /* Model */,
 				5288382929128A7B009A4D59 /* View */,
 				5288382A29128A81009A4D59 /* Controller */,
+				52C9AD3C2913E7AE00BC340A /* SubViews */,
 			);
 			path = ServicesPage;
 			sourceTree = "<group>";
@@ -527,7 +531,6 @@
 			isa = PBXGroup;
 			children = (
 				52C9AD3B2913E7A600BC340A /* Main */,
-				52C9AD3C2913E7AE00BC340A /* SubViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -760,6 +763,7 @@
 				5227A0E7291299EC0025B26F /* ModelForServicesPage.swift in Sources */,
 				523A19EE291908710034ACF5 /* CustomImageView.swift in Sources */,
 				52AE1AB729114FF2008849CA /* ViewController.swift in Sources */,
+				52DE6068291B7BD300DFE9CF /* CustomTextField.swift in Sources */,
 				5212EA72291A53E4007522BD /* ContactPageViewController.swift in Sources */,
 				5227A0F02912A0FA0025B26F /* ModelForYourPet.swift in Sources */,
 				5212EA6E291A252F007522BD /* CellForReviewsView.swift in Sources */,

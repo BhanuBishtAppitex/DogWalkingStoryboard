@@ -16,7 +16,7 @@ struct ModelForSettingViewController {
             "Log out"
         ]
         static let rightLabel: [String] = [
-            "","",""
+            "nil","nil","nil"
         ]
         static let rightImage: [String] = [
             "Arrow", "Arrow", "Arrow"
@@ -33,13 +33,13 @@ struct ModelForSettingViewController {
         static let rightLabel: [String] = [
             "23.9564.00",
             "Release",
-            "",
-            "",
-            "",
+            "nil",
+            "nil",
+            "nil",
         ]
         static let rightImage: [String] = [
-            "",
-            "",
+            "nil",
+            "nil",
             "Arrow",
             "Arrow",
             "Arrow",
