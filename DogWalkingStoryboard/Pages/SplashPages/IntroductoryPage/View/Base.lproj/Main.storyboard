@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dvr-g8-F1t">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="807"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="763"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" name="AccentBlur"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="eBs-q1-0wk">
@@ -105,7 +105,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N0f-Zy-hbJ" secondAttribute="trailing" id="f01-Ab-KfO"/>
                             <constraint firstItem="N0f-Zy-hbJ" firstAttribute="top" secondItem="dvr-g8-F1t" secondAttribute="bottom" constant="-50" id="k7x-EQ-Ia7"/>
                             <constraint firstItem="N0f-Zy-hbJ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="sPY-YJ-bGP"/>
-                            <constraint firstItem="dvr-g8-F1t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sgZ-xd-PgB"/>
+                            <constraint firstItem="dvr-g8-F1t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sgZ-xd-PgB"/>
                             <constraint firstItem="N0f-Zy-hbJ" firstAttribute="top" secondItem="zmJ-y6-ska" secondAttribute="bottom" id="v4B-RF-QOX"/>
                             <constraint firstItem="zmJ-y6-ska" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlH-7D-8Vq"/>
                             <constraint firstItem="dvr-g8-F1t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wwl-bk-ziI"/>

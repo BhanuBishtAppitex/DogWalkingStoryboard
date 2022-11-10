@@ -8,10 +8,11 @@
 import UIKit
 
 class DogWalkingTwoViewController: UIViewController {
-
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nextButton.titleLabel?.font = UIFont(name: C.Fonts.Poppins.SemiBold, size: 16)
      
     }
     

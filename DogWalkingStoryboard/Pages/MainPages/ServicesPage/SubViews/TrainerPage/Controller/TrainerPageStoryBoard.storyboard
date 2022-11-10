@@ -159,10 +159,10 @@
                                 <rect key="frame" x="0.0" y="393" width="414" height="469"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Raf-jZ-XgF" userLabel="SegmentedControllerStavkView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <rect key="frame" x="24" y="0.0" width="366" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuZ-Me-Oui">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="56"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Info">
                                                     <color key="baseForegroundColor" name="TextColorPrimary"/>
@@ -172,7 +172,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiQ-Uf-AR8">
-                                                <rect key="frame" x="138" y="0.0" width="138" height="56"/>
+                                                <rect key="frame" x="122" y="0.0" width="122" height="56"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Reviews">
                                                     <color key="baseForegroundColor" name="TextColorPrimary"/>
@@ -182,7 +182,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6k-QI-sQc">
-                                                <rect key="frame" x="276" y="0.0" width="138" height="56"/>
+                                                <rect key="frame" x="244" y="0.0" width="122" height="56"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Services">
                                                     <color key="baseForegroundColor" name="TextColorPrimary"/>
@@ -197,7 +197,7 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jB-B4-MqI" userLabel="sepratorView">
-                                        <rect key="frame" x="0.0" y="56" width="138" height="2"/>
+                                        <rect key="frame" x="24" y="56" width="122" height="2"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="oEd-CD-ATC"/>
@@ -579,10 +579,10 @@
                                     <constraint firstAttribute="bottom" secondItem="lcS-Jw-ZOh" secondAttribute="bottom" id="0hd-sM-Czz"/>
                                     <constraint firstItem="lcS-Jw-ZOh" firstAttribute="leading" secondItem="rX1-Qw-hmu" secondAttribute="leading" id="IgW-jh-8zS"/>
                                     <constraint firstItem="yNW-Ug-XqD" firstAttribute="leading" secondItem="rX1-Qw-hmu" secondAttribute="leading" id="Mj5-Lo-WrZ"/>
-                                    <constraint firstItem="Raf-jZ-XgF" firstAttribute="leading" secondItem="rX1-Qw-hmu" secondAttribute="leading" id="Sjp-VY-Eff"/>
+                                    <constraint firstItem="Raf-jZ-XgF" firstAttribute="leading" secondItem="rX1-Qw-hmu" secondAttribute="leading" constant="24" id="Sjp-VY-Eff"/>
                                     <constraint firstItem="yNW-Ug-XqD" firstAttribute="top" secondItem="6jB-B4-MqI" secondAttribute="bottom" id="XMs-X4-9JD"/>
-                                    <constraint firstItem="6jB-B4-MqI" firstAttribute="leading" secondItem="rX1-Qw-hmu" secondAttribute="leading" id="Y4S-mg-s2j"/>
-                                    <constraint firstAttribute="trailing" secondItem="Raf-jZ-XgF" secondAttribute="trailing" id="aKp-Ro-bQm"/>
+                                    <constraint firstItem="6jB-B4-MqI" firstAttribute="leading" secondItem="rX1-Qw-hmu" secondAttribute="leading" constant="24" id="Y4S-mg-s2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="Raf-jZ-XgF" secondAttribute="trailing" constant="24" id="aKp-Ro-bQm"/>
                                     <constraint firstAttribute="trailing" secondItem="lcS-Jw-ZOh" secondAttribute="trailing" id="cLI-3d-7UE"/>
                                     <constraint firstItem="6jB-B4-MqI" firstAttribute="top" secondItem="Raf-jZ-XgF" secondAttribute="bottom" id="cuJ-90-2Vt"/>
                                     <constraint firstAttribute="trailing" secondItem="yNW-Ug-XqD" secondAttribute="trailing" id="oaG-1Y-qM6"/>
@@ -597,7 +597,7 @@
                                     <constraint firstAttribute="height" constant="50" id="GI5-bI-NI0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Contact" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Contact this sitter" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -630,6 +630,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="contactThisSitterButton" destination="PjV-xh-KX9" id="Qop-il-QQR"/>
                         <outlet property="infoButton" destination="zuZ-Me-Oui" id="35u-UI-eey"/>
                         <outlet property="reviewsButton" destination="OiQ-Uf-AR8" id="1wE-5L-f2C"/>
                         <outlet property="scrollView" destination="lcS-Jw-ZOh" id="qto-UM-yOU"/>
@@ -783,7 +784,7 @@
                                         <color key="textColor" name="TextColorPrimary"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="13" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FLZ-lY-8ah" userLabel="contactTableView">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="13" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FLZ-lY-8ah" userLabel="contactTableView">
                                         <rect key="frame" x="0.0" y="371" width="366" height="123"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>

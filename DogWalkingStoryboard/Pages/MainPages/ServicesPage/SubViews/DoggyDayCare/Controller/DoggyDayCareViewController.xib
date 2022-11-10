@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoggyDayCareViewController" customModule="DogWalkingStoryboard" customModuleProvider="target">
             <connections>
+                <outlet property="nextButton" destination="7nS-ra-UZJ" id="EFF-27-cev"/>
                 <outlet property="tableView" destination="eSd-pp-Nml" id="zHN-bn-BcG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

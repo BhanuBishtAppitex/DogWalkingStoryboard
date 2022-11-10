@@ -24,7 +24,7 @@ class ServicesPageViewController: UIViewController {
     
 }
 
-extension ServicesPageViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ServicesPageViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ModelForServicesPage.mainTitle.count
@@ -37,8 +37,8 @@ extension ServicesPageViewController: UICollectionViewDelegate, UICollectionView
         cell.secondTitle.text = ModelForServicesPage.secondTitle[indexPath.row]
        
         NSLayoutConstraint.activate([
-            cell.contentView.widthAnchor.constraint(equalToConstant: (collectionView.frame.width/2)-12),
-            cell.contentView.heightAnchor.constraint(equalToConstant: (collectionView.frame.height/3-15))
+           // cell.contentView.widthAnchor.constraint(equalToConstant: (collectionView.frame.width/2)-12),
+           // cell.contentView.heightAnchor.constraint(equalToConstant: (collectionView.frame.height/3-15))
         ])
         return cell
         
@@ -56,6 +56,11 @@ extension ServicesPageViewController: UICollectionViewDelegate, UICollectionView
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: ((collectionView.frame.width/2)-(12/2)), height: ((collectionView.frame.height/3)-(30/3)))
     }
     
 

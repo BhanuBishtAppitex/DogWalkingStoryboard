@@ -19,6 +19,7 @@ class TrainerPageViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var tableViewForInfoView: UITableView!
     @IBOutlet weak var tableViewForReviewsView: UITableView!
+    @IBOutlet weak var contactThisSitterButton: UIButton!
     
     //MARK: - data and cell for tableViews
     let cellForInfoView = CellForMorePage.self
@@ -28,17 +29,17 @@ class TrainerPageViewController: UIViewController {
 
     
     //MARK: - view methods
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableViewForInfoView.register(cellForInfoView.nib, forCellReuseIdentifier: cellForInfoView.identificationString)
-        tableViewForReviewsView.register(cellForReviewsView.nib, forCellReuseIdentifier: cellForReviewsView.identifierString)
-    
-    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        contactThisSitterButton.titleLabel?.font = UIFont(name: C.Fonts.Poppins.SemiBold, size: 16)
+        tableViewForInfoView.register(cellForInfoView.nib, forCellReuseIdentifier: cellForInfoView.identificationString)
+        tableViewForReviewsView.register(cellForReviewsView.nib, forCellReuseIdentifier: cellForReviewsView.identifierString)
         scrollView.delegate = self
         scrollView.isDirectionalLockEnabled = true
+        tableViewForInfoView.register(cellForInfoView.nib, forCellReuseIdentifier: cellForInfoView.identificationString)
+        tableViewForReviewsView.register(cellForReviewsView.nib, forCellReuseIdentifier: cellForReviewsView.identifierString)
     }
     
     
@@ -57,7 +58,7 @@ class TrainerPageViewController: UIViewController {
         case "Info":
             print("Info Button Presssed")
             UIView.animate(withDuration: 0.5) {
-                self.sepratorLeadingAnchor.constant = 0
+                self.sepratorLeadingAnchor.constant = 0+24
                 self.scrollView.contentOffset.x = 0
                 self.scrollView.isScrollEnabled = true
                 
@@ -66,7 +67,7 @@ class TrainerPageViewController: UIViewController {
         case "Reviews":
             print("Reviews Button Presssed")
             UIView.animate(withDuration: 0.5) {
-                self.sepratorLeadingAnchor.constant = self.infoButton.frame.width
+                self.sepratorLeadingAnchor.constant = self.infoButton.frame.width+24
                 self.scrollView.contentOffset.x = self.view.frame.width
                 self.scrollView.isScrollEnabled = false
                 
@@ -74,7 +75,7 @@ class TrainerPageViewController: UIViewController {
         case "Services":
             print("Services Button Presssed")
             UIView.animate(withDuration: 0.5) {
-                self.sepratorLeadingAnchor.constant = self.infoButton.frame.width*2
+                self.sepratorLeadingAnchor.constant = self.infoButton.frame.width*2+24
                 self.scrollView.contentOffset.x = self.view.frame.width*2
                 self.scrollView.isScrollEnabled = true
             }

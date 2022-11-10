@@ -38,20 +38,15 @@ class ViewController: UIViewController {
         
     }
     
-   
     @IBAction func pageControllerValueChanged(_ sender: UIPageControl, forEvent event: UIEvent) {
         UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseInOut) {
             self.collectionView.contentOffset.x = CGFloat(self.pageControl.currentPage) * self.view.frame.width
         }
-
     }
-    
-    
-    
 }
 
 //MARK: - Extension for collection view
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.mainImage.count
     }
@@ -69,12 +64,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAtIndexPath indexPath:  NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
-    
     
     
     

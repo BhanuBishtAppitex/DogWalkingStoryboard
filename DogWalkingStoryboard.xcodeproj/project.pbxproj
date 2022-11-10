@@ -174,7 +174,6 @@
 			children = (
 				5225A7DF291BDC0A008BCB3A /* CellForYourPet.swift */,
 				5225A7E0291BDC0A008BCB3A /* CellForYourPet.xib */,
-				5286899F2915270D0087487C /* SubViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +519,7 @@
 				5227A0E829129F020025B26F /* Model */,
 				5227A0E929129F090025B26F /* View */,
 				5227A0EA29129F0C0025B26F /* Controller */,
+				5286899F2915270D0087487C /* SubViews */,
 			);
 			path = "Your Pets Page";
 			sourceTree = "<group>";

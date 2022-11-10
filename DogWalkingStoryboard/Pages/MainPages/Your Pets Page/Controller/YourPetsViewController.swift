@@ -12,11 +12,18 @@ class YourPetsViewController: UIViewController {
     let identifier = CellForYourPet.identifierString
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addAPetButton: CustomUIButtom!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateInitialView()
         tableView.register(nib, forCellReuseIdentifier: identifier)
+    }
+    
+    func updateInitialView(){
+        // font for button
+        addAPetButton.titleLabel?.font = UIFont(name: C.Fonts.Poppins.SemiBold, size: 16)
     }
 }
 

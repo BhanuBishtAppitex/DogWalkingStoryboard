@@ -30,8 +30,6 @@ class CellForServicePage: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         mainView.layer.cornerRadius = 12
-        //mainView.layer.borderWidth = 1
-        //mainView.layer.borderColor = #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
         mainView.layer.shadowColor = #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
         mainView.layer.shadowOffset = CGSize(width: 2, height: 2)
         mainView.layer.shadowOpacity = 1

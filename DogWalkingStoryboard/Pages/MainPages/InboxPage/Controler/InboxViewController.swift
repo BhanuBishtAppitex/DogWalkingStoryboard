@@ -12,20 +12,20 @@ class InboxViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateInitialView()
+        tableView.register(CustomTableViewCell.nib, forCellReuseIdentifier: CustomTableViewCell.indetifierText)
+        
+    }
+    
+    func updateInitialView() {
         segmentedControl.backgroundColor = UIColor(red: 0.991, green: 0.925, blue: 0.909, alpha: 1)
         segmentedControl.selectedSegmentTintColor = .white
         let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: C.Colors.AccentColor)]
         let titleTextAttributes2 = [NSAttributedString.Key.foregroundColor: UIColor(named: C.Colors.TextDullColor)]
         segmentedControl.setTitleTextAttributes(titleTextAttributes2 as [NSAttributedString.Key : Any], for: .normal)
         segmentedControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.register(CustomTableViewCell.nib, forCellReuseIdentifier: CustomTableViewCell.indetifierText)
-        
     }
  
     //MARK: - button presss methods

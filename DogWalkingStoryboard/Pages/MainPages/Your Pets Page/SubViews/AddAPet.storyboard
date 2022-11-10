@@ -63,7 +63,7 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-5L-jvQ" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="742.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="826.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddAPet" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-IK-D4p">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
@@ -89,22 +89,22 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="n5w-wd-5nZ" userLabel="TypeOfPetStackView">
-                                                <rect key="frame" x="24" y="304" width="366" height="438.5"/>
+                                                <rect key="frame" x="24" y="304" width="366" height="522.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of pet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwe-0a-XOE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="28.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
                                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                                         <color key="textColor" name="TextColorPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="EcZ-He-Fyy" userLabel="categoryStackView">
-                                                        <rect key="frame" x="0.0" y="51.5" width="366" height="154"/>
+                                                        <rect key="frame" x="0.0" y="57" width="366" height="232.5"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BbR-RU-VJ7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="154"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="232.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="RBz-Go-xLt">
-                                                                        <rect key="frame" x="-53.5" y="0.0" width="279" height="154"/>
+                                                                        <rect key="frame" x="-53.5" y="0.0" width="279" height="232.5"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
@@ -115,10 +115,10 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0j-7r-P1q">
-                                                                <rect key="frame" x="194" y="0.0" width="172" height="154"/>
+                                                                <rect key="frame" x="194" y="0.0" width="172" height="232.5"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat" translatesAutoresizingMaskIntoConstraints="NO" id="mhQ-sx-FKa">
-                                                                        <rect key="frame" x="-53.5" y="0.0" width="279" height="154"/>
+                                                                        <rect key="frame" x="-53.5" y="0.0" width="279" height="232.5"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
@@ -134,7 +134,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uen-dg-7a7" userLabel="Name&amp;WeightStackView">
-                                                        <rect key="frame" x="0.0" y="228.5" width="366" height="210"/>
+                                                        <rect key="frame" x="0.0" y="312.5" width="366" height="210"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHQ-dR-EEk">
                                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="0.0"/>
@@ -164,11 +164,11 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hHs-ys-iq0">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hHs-ys-iq0">
                                                                 <rect key="frame" x="0.0" y="148" width="366" height="62"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yaE-6v-e62">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="62"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="178" height="62"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age(Yr.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpC-Zv-ZBm">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="67.5" height="0.0"/>
@@ -177,18 +177,18 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8R-L2-CmD" customClass="CustomTextFieldTwo" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="12" width="32" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="12" width="50" height="50"/>
                                                                                 <constraints>
+                                                                                    <constraint firstAttribute="width" constant="50" id="Sdf-W0-nAz"/>
                                                                                     <constraint firstAttribute="height" constant="50" id="xcD-fj-gek"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                             </textField>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" name="AccentColor"/>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SdH-nC-OvX" userLabel="ageStackView">
-                                                                        <rect key="frame" x="290" y="0.0" width="76" height="62"/>
+                                                                        <rect key="frame" x="188" y="0.0" width="178" height="62"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age(Mo.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hd-FZ-fcm">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="0.0"/>
@@ -197,21 +197,17 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V4t-Ek-egb" customClass="CustomTextFieldTwo" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="12" width="32" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="12" width="50" height="50"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="50" id="4fO-ZV-46e"/>
+                                                                                    <constraint firstAttribute="width" constant="50" id="lM5-WL-OpL"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                             </textField>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" name="AccentColor"/>
                                                                     </stackView>
                                                                 </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="M8R-L2-CmD" firstAttribute="width" secondItem="hHs-ys-iq0" secondAttribute="width" multiplier="0.0874317" id="bNQ-3T-1pk"/>
-                                                                    <constraint firstItem="V4t-Ek-egb" firstAttribute="width" secondItem="hHs-ys-iq0" secondAttribute="width" multiplier="0.0874317" id="rcN-dP-WuQ"/>
-                                                                </constraints>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
@@ -234,6 +230,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="5Sl-5L-jvQ" firstAttribute="width" secondItem="0yC-QP-ew7" secondAttribute="width" priority="999" id="Emj-J3-kmo"/>
                                     <constraint firstItem="5Sl-5L-jvQ" firstAttribute="bottom" secondItem="dWB-ZL-tEp" secondAttribute="bottom" id="Gny-z5-CBY"/>
                                     <constraint firstItem="5Sl-5L-jvQ" firstAttribute="leading" secondItem="dWB-ZL-tEp" secondAttribute="leading" id="ZRY-PG-bSj"/>
                                     <constraint firstItem="5Sl-5L-jvQ" firstAttribute="trailing" secondItem="dWB-ZL-tEp" secondAttribute="trailing" id="dEs-tb-uOo"/>

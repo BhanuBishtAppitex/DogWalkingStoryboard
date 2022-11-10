@@ -12,11 +12,13 @@ class DoggyDayCareViewController: UIViewController {
     let cell = CellForDoggyDayCare.self
     let data = ModelForDoggyDayCare.self
     
+    @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.titleLabel?.font = UIFont(name: C.Fonts.Poppins.SemiBold, size: 16)
         tableView.register(cell.nib, forCellReuseIdentifier: cell.identifierString)
         tableView.dataSource = self
         tableView.delegate = self

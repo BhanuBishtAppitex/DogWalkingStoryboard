@@ -25,21 +25,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="717" height="839"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Ys-coW">
+                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Ys-coW">
                         <rect key="frame" x="0.0" y="0.0" width="717" height="839"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-dD-vIV" userLabel="topView">
                                 <rect key="frame" x="0.0" y="0.0" width="717" height="419.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Introductory5" translatesAutoresizingMaskIntoConstraints="NO" id="v4y-s2-r1J" userLabel="mainImage">
-                                        <rect key="frame" x="181.5" y="33" width="354" height="354"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="717" height="419.5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8980392157" colorSpace="calibratedRGB"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8980392157" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="v4y-s2-r1J" firstAttribute="leading" secondItem="aWJ-dD-vIV" secondAttribute="leading" id="54i-qv-rF4"/>
                                     <constraint firstItem="v4y-s2-r1J" firstAttribute="centerX" secondItem="aWJ-dD-vIV" secondAttribute="centerX" id="DYM-Ve-EH1"/>
                                     <constraint firstItem="v4y-s2-r1J" firstAttribute="centerY" secondItem="aWJ-dD-vIV" secondAttribute="centerY" id="QA9-z5-8Gs"/>
+                                    <constraint firstItem="v4y-s2-r1J" firstAttribute="top" secondItem="aWJ-dD-vIV" secondAttribute="top" id="YAB-Ba-EMh"/>
+                                    <constraint firstAttribute="bottom" secondItem="v4y-s2-r1J" secondAttribute="bottom" id="cij-8B-8ZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="v4y-s2-r1J" secondAttribute="trailing" id="zso-Pk-FrQ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tF-I5-AYS" userLabel="bottomView">

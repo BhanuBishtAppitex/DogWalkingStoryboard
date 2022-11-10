@@ -6,7 +6,6 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -160,26 +159,13 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-36-MBX">
                                 <rect key="frame" x="24" y="125" width="366" height="674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m2P-ry-5Cg">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="12" id="m2P-ry-5Cg">
                                     <size key="itemSize" width="152" height="169"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellForServicePage" id="M5u-7r-Ke7" customClass="CellForServicesPage" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="169"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uvw-tf-K8k">
-                                            <rect key="frame" x="0.0" y="0.0" width="152" height="169"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="152" height="169"/>
-                                        <connections>
-                                            <outlet property="mainView" destination="uvw-tf-K8k" id="Sxa-py-zq3"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="Ww8-5T-tmN" id="Kfv-nb-ePr"/>
                                     <outlet property="delegate" destination="Ww8-5T-tmN" id="Rdm-yz-pdK"/>
@@ -273,6 +259,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Your Pets" image="TabBaarIcon3" id="C1o-1W-2xh"/>
                     <connections>
+                        <outlet property="addAPetButton" destination="EEw-oV-Ufm" id="LpD-if-EP7"/>
                         <outlet property="tableView" destination="xnh-9T-oVj" id="aRu-ef-acJ"/>
                     </connections>
                 </viewController>

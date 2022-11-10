@@ -193,14 +193,14 @@
                                         <color key="textColor" name="TextColorPrimary"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xYp-4a-E0F">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xYp-4a-E0F">
                                         <rect key="frame" x="20" y="232" width="326" height="45"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-JS-M1d" userLabel="puppyView" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="210" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="234" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puppy(less than 1 year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nE-MM-AHw">
-                                                        <rect key="frame" x="22" y="12.5" width="166" height="20"/>
+                                                        <rect key="frame" x="34" y="12.5" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="TextColorPrimary"/>
                                                         <nil key="highlightedColor"/>
@@ -209,7 +209,6 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="9nE-MM-AHw" firstAttribute="centerY" secondItem="tLG-JS-M1d" secondAttribute="centerY" id="9kD-Nq-DCM"/>
-                                                    <constraint firstAttribute="width" constant="210" id="Hr1-DH-MHc"/>
                                                     <constraint firstItem="9nE-MM-AHw" firstAttribute="centerX" secondItem="tLG-JS-M1d" secondAttribute="centerX" id="cB9-Ha-t5X"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -225,10 +224,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DU-KL-a53" userLabel="adultView" customClass="CustomCornerRadiusView" customModule="DogWalkingStoryboard" customModuleProvider="target">
-                                                <rect key="frame" x="251" y="0.0" width="75" height="45"/>
+                                                <rect key="frame" x="244" y="0.0" width="82" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-9Y-GYm">
-                                                        <rect key="frame" x="19" y="12.5" width="37.5" height="20"/>
+                                                        <rect key="frame" x="22.5" y="12.5" width="37.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="TextColorPrimary"/>
                                                         <nil key="highlightedColor"/>
@@ -238,7 +237,7 @@
                                                 <constraints>
                                                     <constraint firstItem="DoD-9Y-GYm" firstAttribute="centerY" secondItem="7DU-KL-a53" secondAttribute="centerY" id="OB6-Fb-xGY"/>
                                                     <constraint firstItem="DoD-9Y-GYm" firstAttribute="centerX" secondItem="7DU-KL-a53" secondAttribute="centerX" id="bZi-Vb-uKH"/>
-                                                    <constraint firstAttribute="width" constant="75" id="mEi-Wk-Ouy"/>
+                                                    <constraint firstAttribute="width" constant="82" id="fhd-nb-2SV"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -326,6 +325,9 @@
                             <constraint firstAttribute="bottom" secondItem="RDs-tb-CWL" secondAttribute="bottom" constant="43" id="tl9-Dv-a3S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchNowButton" destination="RDs-tb-CWL" id="o1f-ad-CaE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -484,7 +486,7 @@
                                     <constraint firstAttribute="height" constant="50" id="2gg-z5-q1F"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Search Now" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                             </button>
@@ -510,6 +512,9 @@
                             <constraint firstItem="e00-BL-Hfq" firstAttribute="trailing" secondItem="NtX-M3-lzz" secondAttribute="trailing" constant="24" id="gSV-rO-h7z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="NtX-M3-lzz" id="jBq-9t-BfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtS-Of-vom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
