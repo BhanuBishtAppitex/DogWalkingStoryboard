@@ -38,6 +38,12 @@ class LoginPageViewController: UIViewController {
     @objc
     func dontHaveAccountLabelClicked(sender: UILabel){
         print("dont have account label clicked")
+        let viewController:
+        UIViewController = UIStoryboard(
+            name: "GettingStarted", bundle: nil
+        ).instantiateViewController(withIdentifier: "SignupViewController") as UIViewController
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: false, completion: nil)
     }
     
     @IBAction func remmberMeTogglePressed(_ sender: UIButton) {

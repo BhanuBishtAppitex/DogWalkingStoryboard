@@ -70,5 +70,11 @@ class SignupPageViewController: UIViewController {
     @objc
     func alreadyHaveAnAccountLabelPressed(sender: UILabel) {
         print("already have and account label pressed")
+        let viewController:
+        UIViewController = UIStoryboard(
+            name: "GettingStarted", bundle: nil
+        ).instantiateViewController(withIdentifier: "LoginViewController") as UIViewController
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: false, completion: nil)
     }
 }
